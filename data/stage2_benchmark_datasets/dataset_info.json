@@ -1,0 +1,18 @@
+{
+  "richere_balanced_subtype_v1_split1_predicted_top5_bench": {
+    "file_name": "richere_balanced_subtype_v1_split1_predicted_top5_bench.jsonl",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "ace05_balanced_subtype_v1_split1_predicted_top5_bench": {
+    "file_name": "ace05_balanced_subtype_v1_split1_predicted_top5_bench.jsonl",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}

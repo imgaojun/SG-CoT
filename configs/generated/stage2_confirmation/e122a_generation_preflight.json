@@ -1,0 +1,47 @@
+{
+  "id": "e121c_generation_preflight_v1",
+  "input_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_confirmation_e121/richere_v2confirm_split1_strict_seenonly_oracle_mixed_noise_top10_shuffle_sgcot_target_train_pos.jsonl",
+  "source_rows": 2125,
+  "selection_mode": "e40_priority_sample_v1",
+  "limit": 20,
+  "seed": 1111,
+  "run_name": "e122a_verifier4096_smoke20",
+  "prompt_profile": "e95_trigger_locked_autocluster",
+  "selected_count": 20,
+  "selected_wnd_ids_sha256": "1309c70d31bdb56913faa81e015242bb0b16640bc6b11934c9f7a89a26552875",
+  "selected_wnd_ids": [
+    "14fbeb82a73a7df37bcda0583c9bca7e-0",
+    "3065902101e4282b89ed4ac8f64d4a84-36",
+    "368df106b2eaa0b4091e099f360a07d6-39",
+    "3f0e2f2fb9b773bc178522a6535a9651-9",
+    "408dff173c599256711f23238e280c15-9",
+    "40f1f697a457e39c30ad94b7cc712c96-26",
+    "40f1f697a457e39c30ad94b7cc712c96-27",
+    "44b011cd504c9ed71beb851324db886a-21",
+    "45b9b8f7d17ce5f352c16a339e96705f-9",
+    "4a3d067b19686b281e0beb437573a28c-23",
+    "4a3d067b19686b281e0beb437573a28c-36",
+    "4deb48e2b0ab194ce37c1bd31c73586a-21",
+    "52355a4167e6ac3a80d19c94ad6259a7-23",
+    "563b1e8fcb1de7a4c0e01da9100d6e09-0",
+    "5bac42475431a87070720e94b27cfd99-22",
+    "AFP_ENG_20100414.0615-kbp-3",
+    "NYT_ENG_20130525.0040-5",
+    "NYT_ENG_20130603.0111-2",
+    "NYT_ENG_20130625.0192-1",
+    "NYT_ENG_20130822.0136-39"
+  ],
+  "checks": {
+    "selected_count_exact": true,
+    "unique_windows": true,
+    "source_heldout_leaks_zero": true,
+    "prompt_heldout_leaks_zero": true,
+    "candidate_violations_zero": true
+  },
+  "all_checks_pass": true,
+  "failures": {
+    "source_heldout_leaks": [],
+    "prompt_heldout_leaks": [],
+    "candidate_violations": []
+  }
+}

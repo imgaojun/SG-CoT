@@ -1,0 +1,69 @@
+{
+  "id": "2026-05-17_stage2_modular_dualexpert_d1930_r2058_threshold",
+  "created_at": "2026-05-17T08:46:42+08:00",
+  "dataset": {
+    "name": "richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle",
+    "dev_split": "dev_seen",
+    "formal_splits": [
+      "test",
+      "test_seen",
+      "test_unseen"
+    ]
+  },
+  "direct_expert": {
+    "name": "balrouteaux_checkpoint-1930_forced_direct",
+    "role": "direct",
+    "branch": "outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_balrouteaux_reasonos2_from_noaux",
+    "checkpoint": "checkpoint-1930"
+  },
+  "reason_expert": {
+    "name": "warmstart_checkpoint-2058_forced_reason",
+    "role": "reason",
+    "branch": "outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_reasonos2_from_noaux",
+    "checkpoint": "checkpoint-2058"
+  },
+  "router_score": {
+    "name": "warmstart_checkpoint-2058_route_nll_delta",
+    "role": "selector_score",
+    "branch": "outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_reasonos2_from_noaux",
+    "checkpoint": "checkpoint-2058",
+    "score_field": "delta_direct_minus_reason_route_nll",
+    "interpretation": "higher means the reason route has lower NLL than the direct route under the route-choice prompt"
+  },
+  "selection": {
+    "score_field": "delta_direct_minus_reason_route_nll",
+    "rule": "reason iff score >= threshold",
+    "max_reason_rate": 0.3,
+    "min_argument_delta": -0.002,
+    "min_event_delta": 0.0,
+    "min_trigger_delta": -0.01,
+    "objective": "select on dev_seen; maximize event F1 delta under constraints, then argument delta, trigger delta, helpful F1, helpful precision, and lower reason rate"
+  },
+  "dev": {
+    "direct_predictions": "outputs/stage2_adaptive_runs_user_devpick_frontier/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_balrouteaux_reasonos2_from_noaux_full_forced_direct_dev_seen_max512/checkpoint-1930/predictions.jsonl",
+    "reason_predictions": "outputs/stage2_adaptive_runs_user_devpick_frontier/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_reasonos2_from_noaux_full_forced_reason_dev_seen_max512/checkpoint-2058/predictions.jsonl",
+    "scores": "outputs/stage2_adaptive_route_likelihood_probe/outcome_helpful_sharedbase_20260515/outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_reasonos2_from_noaux/checkpoint-2058/dev_seen_scores.jsonl"
+  },
+  "formal": {
+    "test": {
+      "direct_predictions": "outputs/stage2_adaptive_runs_user_formal_nll_gated/outcome_helpful_sharedbase_balrouteaux_20260516/richere_split1_qwen3_1_7b_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_balrouteaux_reasonos2_from_noaux/checkpoint-1930/forced_direct/test/predictions.jsonl",
+      "reason_predictions": "outputs/stage2_adaptive_runs_user_formal_nll_gated/outcome_helpful_sharedbase_20260515/richere_split1_qwen3_1_7b_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_reasonos2_from_noaux/checkpoint-2058/forced_reason/test/predictions.jsonl",
+      "scores": "outputs/stage2_adaptive_route_likelihood_probe/outcome_helpful_sharedbase_formal_20260515/outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_reasonos2_from_noaux/checkpoint-2058/test/scores.jsonl"
+    },
+    "test_seen": {
+      "direct_predictions": "outputs/stage2_adaptive_runs_user_formal_nll_gated/outcome_helpful_sharedbase_balrouteaux_20260516/richere_split1_qwen3_1_7b_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_balrouteaux_reasonos2_from_noaux/checkpoint-1930/forced_direct/test_seen/predictions.jsonl",
+      "reason_predictions": "outputs/stage2_adaptive_runs_user_formal_nll_gated/outcome_helpful_sharedbase_20260515/richere_split1_qwen3_1_7b_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_reasonos2_from_noaux/checkpoint-2058/forced_reason/test_seen/predictions.jsonl",
+      "scores": "outputs/stage2_adaptive_route_likelihood_probe/outcome_helpful_sharedbase_formal_20260515/outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_reasonos2_from_noaux/checkpoint-2058/test_seen/scores.jsonl"
+    },
+    "test_unseen": {
+      "direct_predictions": "outputs/stage2_adaptive_runs_user_formal_nll_gated/outcome_helpful_sharedbase_balrouteaux_20260516/richere_split1_qwen3_1_7b_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_balrouteaux_reasonos2_from_noaux/checkpoint-1930/forced_direct/test_unseen/predictions.jsonl",
+      "reason_predictions": "outputs/stage2_adaptive_runs_user_formal_nll_gated/outcome_helpful_sharedbase_20260515/richere_split1_qwen3_1_7b_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_reasonos2_from_noaux/checkpoint-2058/forced_reason/test_unseen/predictions.jsonl",
+      "scores": "outputs/stage2_adaptive_route_likelihood_probe/outcome_helpful_sharedbase_formal_20260515/outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_reasonos2_from_noaux/checkpoint-2058/test_unseen/scores.jsonl"
+    }
+  },
+  "outputs": {
+    "root": "outputs/stage2_modular_dualexpert/modular_dualexpert_d1930_r2058_threshold_20260517",
+    "report_json": "reports/artifacts/2026-05-17_stage2_modular_dualexpert_d1930_r2058_threshold.json",
+    "report_md": "reports/2026-05-17_stage2_modular_dualexpert_d1930_r2058_threshold.md"
+  }
+}

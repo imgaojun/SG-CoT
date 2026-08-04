@@ -1,0 +1,33 @@
+{
+  "id": "e122a_verifier4096_smoke20",
+  "protocol": "e122a-verifier4096-trainonly-smoke20",
+  "objective": "Test whether E121 verifier parse failures are caused by the 1800-token response budget.",
+  "source_dataset": "data/stage2_confirmation_e121/richere_v2confirm_split1_strict_seenonly_oracle_mixed_noise_top10_shuffle_sgcot_target_train_pos.jsonl",
+  "test_access": false,
+  "sample_selection": {
+    "mode": "e40_priority_sample_v1",
+    "limit": 20,
+    "seed": 1111
+  },
+  "generator_model": "deepseek-v4-pro",
+  "generator_max_tokens": 8192,
+  "generator_reasoning_effort": null,
+  "verifier_model": "deepseek-v4-pro",
+  "verifier_reasoning_effort": "max",
+  "verifier_max_tokens": 4096,
+  "max_attempts_per_row": 3,
+  "workers": 8,
+  "prompt_profile": "e95_trigger_locked_autocluster",
+  "repair_profile": "strict_full",
+  "output_protocol": "xml_tags",
+  "single_changed_field_from_e121": "verifier_max_tokens",
+  "gate": {
+    "expected_unique_rows": 20,
+    "minimum_accepted": 19,
+    "maximum_verifier_parse_errors": 0,
+    "maximum_empty_verifier_content": 0,
+    "maximum_verifier_length_finish": 0,
+    "minimum_verifier_token_headroom": 96
+  },
+  "output_dir": "outputs/stage2_confirmation_e122/e122a_verifier4096_smoke20"
+}

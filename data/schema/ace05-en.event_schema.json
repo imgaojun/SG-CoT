@@ -1,0 +1,522 @@
+[
+  {
+    "definition": "An organization formally declares that it cannot pay its debts or continue operating financially.",
+    "trigger_cues": [
+      "bankruptcy",
+      "bankrupt",
+      "insolvency",
+      "filed for bankruptcy"
+    ],
+    "core_roles": [
+      "Org"
+    ],
+    "event_type": "Business:Declare-Bankruptcy",
+    "document": "Event type: Business:Declare-Bankruptcy\nDefinition: An organization formally declares that it cannot pay its debts or continue operating financially.\nTrigger cues: bankruptcy, bankrupt, insolvency, filed for bankruptcy\nCore roles: Org"
+  },
+  {
+    "definition": "An organization shuts down, dissolves, or otherwise stops existing.",
+    "trigger_cues": [
+      "closed",
+      "shut down",
+      "dissolved",
+      "ceased operations"
+    ],
+    "core_roles": [
+      "Org",
+      "Place"
+    ],
+    "event_type": "Business:End-Org",
+    "document": "Event type: Business:End-Org\nDefinition: An organization shuts down, dissolves, or otherwise stops existing.\nTrigger cues: closed, shut down, dissolved, ceased operations\nCore roles: Org, Place"
+  },
+  {
+    "definition": "Two or more organizations combine into a single organization.",
+    "trigger_cues": [
+      "merge",
+      "merged",
+      "acquisition merger",
+      "combine"
+    ],
+    "core_roles": [
+      "Org"
+    ],
+    "event_type": "Business:Merge-Org",
+    "document": "Event type: Business:Merge-Org\nDefinition: Two or more organizations combine into a single organization.\nTrigger cues: merge, merged, acquisition merger, combine\nCore roles: Org"
+  },
+  {
+    "definition": "A new organization or company is founded or launched.",
+    "trigger_cues": [
+      "founded",
+      "launched",
+      "started",
+      "established"
+    ],
+    "core_roles": [
+      "Org",
+      "Person",
+      "Place"
+    ],
+    "event_type": "Business:Start-Org",
+    "document": "Event type: Business:Start-Org\nDefinition: A new organization or company is founded or launched.\nTrigger cues: founded, launched, started, established\nCore roles: Org, Person, Place"
+  },
+  {
+    "definition": "A violent physical attack, strike, assault, or other hostile act is carried out against a target.",
+    "trigger_cues": [
+      "attack",
+      "bombing",
+      "assault",
+      "strike"
+    ],
+    "core_roles": [
+      "Attacker",
+      "Target",
+      "Victim",
+      "Place",
+      "Instrument"
+    ],
+    "event_type": "Conflict:Attack",
+    "document": "Event type: Conflict:Attack\nDefinition: A violent physical attack, strike, assault, or other hostile act is carried out against a target.\nTrigger cues: attack, bombing, assault, strike\nCore roles: Attacker, Target, Victim, Place, Instrument"
+  },
+  {
+    "definition": "People gather publicly to protest, march, rally, or demonstrate.",
+    "trigger_cues": [
+      "protest",
+      "rally",
+      "march",
+      "demonstration"
+    ],
+    "core_roles": [
+      "Entity",
+      "Place"
+    ],
+    "event_type": "Conflict:Demonstrate",
+    "document": "Event type: Conflict:Demonstrate\nDefinition: People gather publicly to protest, march, rally, or demonstrate.\nTrigger cues: protest, rally, march, demonstration\nCore roles: Entity, Place"
+  },
+  {
+    "definition": "People or organizations meet face to face or hold a meeting.",
+    "trigger_cues": [
+      "met",
+      "meeting",
+      "summit",
+      "talks"
+    ],
+    "core_roles": [
+      "Entity",
+      "Place"
+    ],
+    "event_type": "Contact:Meet",
+    "document": "Event type: Contact:Meet\nDefinition: People or organizations meet face to face or hold a meeting.\nTrigger cues: met, meeting, summit, talks\nCore roles: Entity, Place"
+  },
+  {
+    "definition": "People communicate through phone calls, writing, letters, email, or similar non-face-to-face communication.",
+    "trigger_cues": [
+      "called",
+      "phoned",
+      "wrote",
+      "emailed"
+    ],
+    "core_roles": [
+      "Entity",
+      "Place"
+    ],
+    "event_type": "Contact:Phone-Write",
+    "document": "Event type: Contact:Phone-Write\nDefinition: People communicate through phone calls, writing, letters, email, or similar non-face-to-face communication.\nTrigger cues: called, phoned, wrote, emailed\nCore roles: Entity, Place"
+  },
+  {
+    "definition": "A defendant is formally found not guilty by a legal authority.",
+    "trigger_cues": [
+      "acquitted",
+      "found not guilty",
+      "acquittal"
+    ],
+    "core_roles": [
+      "Defendant",
+      "Adjudicator",
+      "Place"
+    ],
+    "event_type": "Justice:Acquit",
+    "document": "Event type: Justice:Acquit\nDefinition: A defendant is formally found not guilty by a legal authority.\nTrigger cues: acquitted, found not guilty, acquittal\nCore roles: Defendant, Adjudicator, Place"
+  },
+  {
+    "definition": "A legal decision or sentence is challenged in a higher court or authority.",
+    "trigger_cues": [
+      "appeal",
+      "appealed",
+      "appellate",
+      "challenge ruling"
+    ],
+    "core_roles": [
+      "Defendant",
+      "Plaintiff",
+      "Adjudicator",
+      "Place"
+    ],
+    "event_type": "Justice:Appeal",
+    "document": "Event type: Justice:Appeal\nDefinition: A legal decision or sentence is challenged in a higher court or authority.\nTrigger cues: appeal, appealed, appellate, challenge ruling\nCore roles: Defendant, Plaintiff, Adjudicator, Place"
+  },
+  {
+    "definition": "A person is arrested, detained, taken into custody, or jailed by authorities.",
+    "trigger_cues": [
+      "arrested",
+      "detained",
+      "jailed",
+      "taken into custody"
+    ],
+    "core_roles": [
+      "Person",
+      "Agent",
+      "Place"
+    ],
+    "event_type": "Justice:Arrest-Jail",
+    "document": "Event type: Justice:Arrest-Jail\nDefinition: A person is arrested, detained, taken into custody, or jailed by authorities.\nTrigger cues: arrested, detained, jailed, taken into custody\nCore roles: Person, Agent, Place"
+  },
+  {
+    "definition": "A person is formally accused, charged, or indicted for a crime.",
+    "trigger_cues": [
+      "charged",
+      "indicted",
+      "accused",
+      "indictment"
+    ],
+    "core_roles": [
+      "Defendant",
+      "Prosecutor",
+      "Adjudicator",
+      "Place"
+    ],
+    "event_type": "Justice:Charge-Indict",
+    "document": "Event type: Justice:Charge-Indict\nDefinition: A person is formally accused, charged, or indicted for a crime.\nTrigger cues: charged, indicted, accused, indictment\nCore roles: Defendant, Prosecutor, Adjudicator, Place"
+  },
+  {
+    "definition": "A defendant is formally found guilty by a legal authority.",
+    "trigger_cues": [
+      "convicted",
+      "found guilty",
+      "conviction"
+    ],
+    "core_roles": [
+      "Defendant",
+      "Adjudicator",
+      "Place"
+    ],
+    "event_type": "Justice:Convict",
+    "document": "Event type: Justice:Convict\nDefinition: A defendant is formally found guilty by a legal authority.\nTrigger cues: convicted, found guilty, conviction\nCore roles: Defendant, Adjudicator, Place"
+  },
+  {
+    "definition": "A person is put to death as a legal punishment.",
+    "trigger_cues": [
+      "executed",
+      "execution",
+      "put to death"
+    ],
+    "core_roles": [
+      "Person",
+      "Agent",
+      "Place"
+    ],
+    "event_type": "Justice:Execute",
+    "document": "Event type: Justice:Execute\nDefinition: A person is put to death as a legal punishment.\nTrigger cues: executed, execution, put to death\nCore roles: Person, Agent, Place"
+  },
+  {
+    "definition": "A suspect or prisoner is formally transferred to another jurisdiction or country for legal proceedings.",
+    "trigger_cues": [
+      "extradited",
+      "extradition",
+      "handed over"
+    ],
+    "core_roles": [
+      "Person",
+      "Origin",
+      "Destination",
+      "Agent"
+    ],
+    "event_type": "Justice:Extradite",
+    "document": "Event type: Justice:Extradite\nDefinition: A suspect or prisoner is formally transferred to another jurisdiction or country for legal proceedings.\nTrigger cues: extradited, extradition, handed over\nCore roles: Person, Origin, Destination, Agent"
+  },
+  {
+    "definition": "A legal authority imposes a monetary penalty on a person or organization.",
+    "trigger_cues": [
+      "fined",
+      "penalty",
+      "ordered to pay",
+      "financial penalty"
+    ],
+    "core_roles": [
+      "Entity",
+      "Adjudicator",
+      "Place"
+    ],
+    "event_type": "Justice:Fine",
+    "document": "Event type: Justice:Fine\nDefinition: A legal authority imposes a monetary penalty on a person or organization.\nTrigger cues: fined, penalty, ordered to pay, financial penalty\nCore roles: Entity, Adjudicator, Place"
+  },
+  {
+    "definition": "A legal authority officially forgives a person and cancels or reduces punishment.",
+    "trigger_cues": [
+      "pardoned",
+      "pardon",
+      "clemency"
+    ],
+    "core_roles": [
+      "Defendant",
+      "Adjudicator",
+      "Place"
+    ],
+    "event_type": "Justice:Pardon",
+    "document": "Event type: Justice:Pardon\nDefinition: A legal authority officially forgives a person and cancels or reduces punishment.\nTrigger cues: pardoned, pardon, clemency\nCore roles: Defendant, Adjudicator, Place"
+  },
+  {
+    "definition": "A prisoner is released from custody, often on parole or under supervision.",
+    "trigger_cues": [
+      "released",
+      "paroled",
+      "freed from prison"
+    ],
+    "core_roles": [
+      "Person",
+      "Agent",
+      "Place"
+    ],
+    "event_type": "Justice:Release-Parole",
+    "document": "Event type: Justice:Release-Parole\nDefinition: A prisoner is released from custody, often on parole or under supervision.\nTrigger cues: released, paroled, freed from prison\nCore roles: Person, Agent, Place"
+  },
+  {
+    "definition": "A court or legal authority formally imposes a punishment on a defendant.",
+    "trigger_cues": [
+      "sentenced",
+      "sentence",
+      "jail term",
+      "punishment"
+    ],
+    "core_roles": [
+      "Defendant",
+      "Adjudicator",
+      "Place"
+    ],
+    "event_type": "Justice:Sentence",
+    "document": "Event type: Justice:Sentence\nDefinition: A court or legal authority formally imposes a punishment on a defendant.\nTrigger cues: sentenced, sentence, jail term, punishment\nCore roles: Defendant, Adjudicator, Place"
+  },
+  {
+    "definition": "A plaintiff files a civil lawsuit against a defendant.",
+    "trigger_cues": [
+      "sued",
+      "lawsuit",
+      "suit filed",
+      "litigation"
+    ],
+    "core_roles": [
+      "Plaintiff",
+      "Defendant",
+      "Adjudicator",
+      "Place"
+    ],
+    "event_type": "Justice:Sue",
+    "document": "Event type: Justice:Sue\nDefinition: A plaintiff files a civil lawsuit against a defendant.\nTrigger cues: sued, lawsuit, suit filed, litigation\nCore roles: Plaintiff, Defendant, Adjudicator, Place"
+  },
+  {
+    "definition": "A trial, hearing, or other formal court proceeding takes place.",
+    "trigger_cues": [
+      "trial",
+      "hearing",
+      "court proceedings",
+      "appeared in court"
+    ],
+    "core_roles": [
+      "Defendant",
+      "Prosecutor",
+      "Adjudicator",
+      "Place"
+    ],
+    "event_type": "Justice:Trial-Hearing",
+    "document": "Event type: Justice:Trial-Hearing\nDefinition: A trial, hearing, or other formal court proceeding takes place.\nTrigger cues: trial, hearing, court proceedings, appeared in court\nCore roles: Defendant, Prosecutor, Adjudicator, Place"
+  },
+  {
+    "definition": "A person is born.",
+    "trigger_cues": [
+      "born",
+      "birth",
+      "gave birth"
+    ],
+    "core_roles": [
+      "Person",
+      "Place"
+    ],
+    "event_type": "Life:Be-Born",
+    "document": "Event type: Life:Be-Born\nDefinition: A person is born.\nTrigger cues: born, birth, gave birth\nCore roles: Person, Place"
+  },
+  {
+    "definition": "A person dies.",
+    "trigger_cues": [
+      "died",
+      "killed",
+      "death",
+      "dead"
+    ],
+    "core_roles": [
+      "Victim",
+      "Agent",
+      "Place",
+      "Instrument"
+    ],
+    "event_type": "Life:Die",
+    "document": "Event type: Life:Die\nDefinition: A person dies.\nTrigger cues: died, killed, death, dead\nCore roles: Victim, Agent, Place, Instrument"
+  },
+  {
+    "definition": "A marriage ends in divorce.",
+    "trigger_cues": [
+      "divorced",
+      "divorce",
+      "split up legally"
+    ],
+    "core_roles": [
+      "Person",
+      "Place"
+    ],
+    "event_type": "Life:Divorce",
+    "document": "Event type: Life:Divorce\nDefinition: A marriage ends in divorce.\nTrigger cues: divorced, divorce, split up legally\nCore roles: Person, Place"
+  },
+  {
+    "definition": "A person is injured, wounded, or hurt.",
+    "trigger_cues": [
+      "injured",
+      "wounded",
+      "hurt",
+      "suffered injuries"
+    ],
+    "core_roles": [
+      "Victim",
+      "Agent",
+      "Place",
+      "Instrument"
+    ],
+    "event_type": "Life:Injure",
+    "document": "Event type: Life:Injure\nDefinition: A person is injured, wounded, or hurt.\nTrigger cues: injured, wounded, hurt, suffered injuries\nCore roles: Victim, Agent, Place, Instrument"
+  },
+  {
+    "definition": "Two people get married or enter a marriage.",
+    "trigger_cues": [
+      "married",
+      "wedding",
+      "marriage"
+    ],
+    "core_roles": [
+      "Person",
+      "Place"
+    ],
+    "event_type": "Life:Marry",
+    "document": "Event type: Life:Marry\nDefinition: Two people get married or enter a marriage.\nTrigger cues: married, wedding, marriage\nCore roles: Person, Place"
+  },
+  {
+    "definition": "A person or artifact is moved or transported from one place to another.",
+    "trigger_cues": [
+      "moved",
+      "transported",
+      "sent",
+      "brought"
+    ],
+    "core_roles": [
+      "Agent",
+      "Artifact",
+      "Person",
+      "Origin",
+      "Destination",
+      "Vehicle"
+    ],
+    "event_type": "Movement:Transport",
+    "document": "Event type: Movement:Transport\nDefinition: A person or artifact is moved or transported from one place to another.\nTrigger cues: moved, transported, sent, brought\nCore roles: Agent, Artifact, Person, Origin, Destination, Vehicle"
+  },
+  {
+    "definition": "A person is elected to a position or office.",
+    "trigger_cues": [
+      "elected",
+      "won election",
+      "voted into office"
+    ],
+    "core_roles": [
+      "Person",
+      "Entity",
+      "Place"
+    ],
+    "event_type": "Personnel:Elect",
+    "document": "Event type: Personnel:Elect\nDefinition: A person is elected to a position or office.\nTrigger cues: elected, won election, voted into office\nCore roles: Person, Entity, Place"
+  },
+  {
+    "definition": "A person leaves, resigns from, is fired from, or otherwise ends a position.",
+    "trigger_cues": [
+      "resigned",
+      "stepped down",
+      "fired",
+      "retired"
+    ],
+    "core_roles": [
+      "Person",
+      "Entity",
+      "Place"
+    ],
+    "event_type": "Personnel:End-Position",
+    "document": "Event type: Personnel:End-Position\nDefinition: A person leaves, resigns from, is fired from, or otherwise ends a position.\nTrigger cues: resigned, stepped down, fired, retired\nCore roles: Person, Entity, Place"
+  },
+  {
+    "definition": "A person is nominated or proposed for a position or office.",
+    "trigger_cues": [
+      "nominated",
+      "nominee",
+      "put forward"
+    ],
+    "core_roles": [
+      "Person",
+      "Agent",
+      "Entity"
+    ],
+    "event_type": "Personnel:Nominate",
+    "document": "Event type: Personnel:Nominate\nDefinition: A person is nominated or proposed for a position or office.\nTrigger cues: nominated, nominee, put forward\nCore roles: Person, Agent, Entity"
+  },
+  {
+    "definition": "A person starts, assumes, or is appointed to a position or office.",
+    "trigger_cues": [
+      "appointed",
+      "took office",
+      "became",
+      "started as"
+    ],
+    "core_roles": [
+      "Person",
+      "Entity",
+      "Place"
+    ],
+    "event_type": "Personnel:Start-Position",
+    "document": "Event type: Personnel:Start-Position\nDefinition: A person starts, assumes, or is appointed to a position or office.\nTrigger cues: appointed, took office, became, started as\nCore roles: Person, Entity, Place"
+  },
+  {
+    "definition": "Money is paid, transferred, donated, or otherwise moved from one party to another.",
+    "trigger_cues": [
+      "paid",
+      "payment",
+      "donated",
+      "funded"
+    ],
+    "core_roles": [
+      "Giver",
+      "Recipient",
+      "Beneficiary",
+      "Place"
+    ],
+    "event_type": "Transaction:Transfer-Money",
+    "document": "Event type: Transaction:Transfer-Money\nDefinition: Money is paid, transferred, donated, or otherwise moved from one party to another.\nTrigger cues: paid, payment, donated, funded\nCore roles: Giver, Recipient, Beneficiary, Place"
+  },
+  {
+    "definition": "Ownership of an object, property, or organization is transferred from one party to another.",
+    "trigger_cues": [
+      "sold",
+      "bought",
+      "purchased",
+      "acquired"
+    ],
+    "core_roles": [
+      "Giver",
+      "Recipient",
+      "Thing",
+      "Place"
+    ],
+    "event_type": "Transaction:Transfer-Ownership",
+    "document": "Event type: Transaction:Transfer-Ownership\nDefinition: Ownership of an object, property, or organization is transferred from one party to another.\nTrigger cues: sold, bought, purchased, acquired\nCore roles: Giver, Recipient, Thing, Place"
+  }
+]

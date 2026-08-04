@@ -1,0 +1,35 @@
+{
+  "id": "e127a_deterministic_exact_zero_leak_full1500",
+  "protocol": "e127-deterministic-exact-zero-leak-existing-traces-v1",
+  "test_access": false,
+  "frozen_raw_jsonl": "outputs/stage2_confirmation_e124/e124b_glm51_selfverifier4096_full1500/e40_raw.jsonl",
+  "frozen_raw_sha256": "073dcd5685dc3b04b4dd045e9b3cfbb495fa7d96fb745090b04323eae2bec66c",
+  "frozen_sampled_rows_jsonl": "outputs/stage2_confirmation_e124/e124b_glm51_selfverifier4096_full1500/sampled_rows.jsonl",
+  "frozen_sampled_rows_sha256": "c55d53d8179faf2619cfd93dcfea598f378464b4573466bfb85b0ec27cfb90d4",
+  "implementation_sha256": "b26a01c9bd312b002db29c2f1e135470f6316a38467c8b42a62fcdced4cb36ce",
+  "source_rows": 1500,
+  "selection": [
+    "last_existing_hard_valid_attempt",
+    "raw_surface_final_recovers_exact_gold",
+    "zero_canonical_heldout_strings_in_visible_training_fields"
+  ],
+  "generator_calls": 0,
+  "llm_verifier_calls": 0,
+  "uses_original_semantic_verdict_for_selection": false,
+  "final_protocol": "shortest_unique_evidence_v1",
+  "gate": {
+    "exact_source_rows": 1500,
+    "minimum_deterministic_exact_zero_leak_rows": 1400,
+    "all_kept_raw_finals_exact_gold": true,
+    "all_kept_zero_heldout_leaks": true,
+    "unique_sample_ids": true,
+    "unique_wnd_ids": true,
+    "complete_partition": true,
+    "minimum_cutoff_valid": 1400,
+    "cutoff_len": 2048,
+    "normalized_zero_heldout_leaks": true,
+    "normalized_exact_surface_recovery": true
+  },
+  "output_dir": "outputs/stage2_confirmation_e127/e127a_deterministic_exact_zero_leak_full1500",
+  "normalized_dataset": "data/stage2_confirmation_e127/richere_v2confirm_split1_strict_seenonly_oracle_mixed_noise_top10_shuffle_sgcot_autocluster_e127a_train_pos.jsonl"
+}

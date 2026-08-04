@@ -1,0 +1,34 @@
+{
+  "data_root": "data/processed/type_holdout",
+  "schema_dir": "data/schema",
+  "output_root": "outputs/candidate_type_recall_runs",
+  "datasets": [
+    "richere-en",
+    "ace05-en"
+  ],
+  "protocols": [
+    "balanced-subtype-v1"
+  ],
+  "splits": [
+    "split1",
+    "split2",
+    "split3",
+    "split4",
+    "split5"
+  ],
+  "parts": [
+    "dev_seen",
+    "test"
+  ],
+  "models": [
+    "Qwen/Qwen3-Reranker-8B"
+  ],
+  "top_k": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "num_workers": 4,
+  "tag": "qwen8b_main"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "e112a_strict_sgcot_preference_k4_seed1104",
+  "profile": "e81",
+  "model_path": "outputs/stage2_strict_runs/e111d_sgcot_seed42",
+  "input_jsonl": "data/stage2_strict_datasets/richere_balanced_split1_strict_seenonly_oracle_mixed_noise_top10_shuffle_sgcot_autocluster_train_pos.jsonl",
+  "output_dir": "outputs/stage2_preference_mining/e112a_strict_sgcot_k4_seed1104",
+  "num_samples": 4,
+  "temperature": 0.8,
+  "top_p": 0.95,
+  "max_new_tokens": 1024,
+  "seed": 1104,
+  "cutoff_len": 1536,
+  "minimum_pairs": 900,
+  "length_ratio": [0.7, 1.3],
+  "teacher_fraction_cap": 0.3,
+  "category_fraction_cap": 0.4,
+  "teacher_requires_sample_round": 1
+}

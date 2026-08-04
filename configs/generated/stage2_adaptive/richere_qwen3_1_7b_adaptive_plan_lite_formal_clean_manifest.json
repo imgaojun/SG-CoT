@@ -1,0 +1,209 @@
+{
+  "base_model": "/workspace/models/LLM-Research/Qwen3-1.7B",
+  "runs": [
+    {
+      "tag": "confrare10_heur10_plan_lite",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_full_free_dev_seen_max512/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "confrare10_heur10_type_plan_lite",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_type_plan_lite_full_free_dev_seen_max512/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_type_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_type_plan_lite/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_type_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_type_plan_lite/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_type_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_type_plan_lite/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_type_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_type_plan_lite/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_type_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_type_plan_lite/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_type_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_type_plan_lite/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_type_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_type_plan_lite/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_type_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_type_plan_lite/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_type_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_type_plan_lite/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "roleconf10_heur10_plan_lite",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_roleconf10_heur10_plan_lite_full_free_dev_seen_max512/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_roleconf10_heur10_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_roleconf10_heur10_plan_lite/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_roleconf10_heur10_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_roleconf10_heur10_plan_lite/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_roleconf10_heur10_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_roleconf10_heur10_plan_lite/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_roleconf10_heur10_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_roleconf10_heur10_plan_lite/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_roleconf10_heur10_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_roleconf10_heur10_plan_lite/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_roleconf10_heur10_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_roleconf10_heur10_plan_lite/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_roleconf10_heur10_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_roleconf10_heur10_plan_lite/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_roleconf10_heur10_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_roleconf10_heur10_plan_lite/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_roleconf10_heur10_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_roleconf10_heur10_plan_lite/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "confrare10_heur10_plan_lite_pairdirect",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_pairdirect_full_free_dev_seen_max512/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_pairdirect_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite_pairdirect/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_pairdirect_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite_pairdirect/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_pairdirect_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite_pairdirect/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_pairdirect_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite_pairdirect/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_pairdirect_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite_pairdirect/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_pairdirect_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite_pairdirect/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_pairdirect_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite_pairdirect/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_pairdirect_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite_pairdirect/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_plan_lite_pairdirect_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_plan_lite_pairdirect/forced_reason/test_unseen"
+        }
+      ]
+    }
+  ]
+}

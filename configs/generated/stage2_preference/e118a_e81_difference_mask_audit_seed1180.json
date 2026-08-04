@@ -1,0 +1,24 @@
+{
+  "protocol": "E118 difference-masked atomic SimPO smoke",
+  "source_preference": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_e115a_e81_atomic_counterfactual_orpo_smoke40_docdiverse_seed1150.jsonl",
+  "source_sha256": "de1f034e027706e52885d915cf5440fe228469e157313fcb5640a27ddcc7785b",
+  "model_path": "/workspace/project/outputs/stage2_adaptive_runs_user/richere_split1_qwen3_4b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_e81_trigger_locked_arbitration_glm51_full1500_thinking_evidence_cot_full",
+  "output_dir": "/workspace/project/outputs/stage2_preference_mining/e118a_e81_difference_mask_audit_seed1180",
+  "pairs": 40,
+  "pairs_per_category": 8,
+  "context_tokens": 1,
+  "selection_seed": 1150,
+  "registration_seed": 1180,
+  "objective": "Keep complete paths as context and compute SimPO only over divergent response labels plus one token of context on each side.",
+  "gates": {
+    "minimum_masked_margin_delta": 0.005,
+    "all_five_masked_categories_positive": true,
+    "full_response_overall_delta_positive": true,
+    "required_full_response_categories_positive": [
+      "extra_frame",
+      "trigger_drift"
+    ],
+    "maximum_chosen_full_logp_drop": 0.02
+  },
+  "test_data_access": false
+}

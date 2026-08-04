@@ -1,0 +1,41 @@
+{
+  "id": "e124b_glm51_selfverifier4096_full1500",
+  "protocol": "e124b-glm51-selfverifier4096-strict-full1500",
+  "source_dataset": "data/stage2_confirmation_e121/richere_v2confirm_split1_strict_seenonly_oracle_mixed_noise_top10_shuffle_sgcot_target_train_pos.jsonl",
+  "test_access": false,
+  "sample_selection": {
+    "mode": "e40_priority_sample_v1",
+    "limit": 1500,
+    "seed": 1111,
+    "wnd_ids_sha256": "c6088086a394cdb98fb6fa4ab87c6caea3ee45ca7873b5779ee554dcc290af87"
+  },
+  "generator_model": "glm-5.1",
+  "generator_max_tokens": 8192,
+  "generator_reasoning_effort": null,
+  "verifier_model": "glm-5.1",
+  "verifier_reasoning_effort": null,
+  "verifier_max_tokens": 4096,
+  "max_attempts_per_row": 3,
+  "workers": 8,
+  "operational_resume": {
+    "completed_unique_rows": 667,
+    "workers": 16,
+    "reuse_existing": true,
+    "scientific_protocol_changed": false,
+    "reason": "Increase API throughput while preserving all completed sample IDs and frozen scientific settings."
+  },
+  "prompt_profile": "e95_trigger_locked_autocluster",
+  "repair_profile": "strict_full",
+  "output_protocol": "xml_tags",
+  "gate": {
+    "expected_unique_rows": 1500,
+    "minimum_accepted": 1400,
+    "maximum_rate_per_verifier_failure_kind": 0.01,
+    "minimum_verifier_p99_token_headroom": 256,
+    "accepted_hard_semantic_valid": true,
+    "zero_heldout_leaks": true,
+    "cutoff_len": 2048
+  },
+  "independent_audit_required_before_training": "e124c_deepseek_audit100",
+  "output_dir": "outputs/stage2_confirmation_e124/e124b_glm51_selfverifier4096_full1500"
+}

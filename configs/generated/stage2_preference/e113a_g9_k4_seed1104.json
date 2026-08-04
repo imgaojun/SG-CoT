@@ -1,0 +1,21 @@
+{
+  "id": "e113a_g9_k4_seed1104",
+  "profile": "g9",
+  "input_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_gollie_style_top10_shuffle_adaptive_hybrid_sgcot_thinking_evidence_cot_train_pos.jsonl",
+  "start_models": {
+    "base": "outputs/stage2_adaptive_runs_user/richere_split1_qwen3_4b_gollie_style_dualmode_g9_cotcalib_full/checkpoint-91",
+    "s8322": "outputs/stage2_adaptive_runs_user/richere_split1_qwen3_4b_gollie_style_dualmode_g9_s8322_cotcalib_full/checkpoint-91",
+    "s8333": "outputs/stage2_adaptive_runs_user/richere_split1_qwen3_4b_gollie_style_dualmode_g9_s8333_cotcalib_full/checkpoint-91"
+  },
+  "num_samples": 4,
+  "temperature": 0.8,
+  "top_p": 0.95,
+  "max_new_tokens": 1024,
+  "seed": 1104,
+  "cutoff_len": 2048,
+  "event_weight": 0.5,
+  "argument_weight": 0.35,
+  "trigger_weight": 0.15,
+  "max_omission_fraction": 0.6,
+  "min_pairs": 900
+}

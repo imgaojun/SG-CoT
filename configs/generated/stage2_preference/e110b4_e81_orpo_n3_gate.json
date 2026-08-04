@@ -1,0 +1,14 @@
+{
+  "id": "e110b4_e81_orpo_n3_gate",
+  "seeds": [42, 8322, 8333],
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 20260712,
+  "requirements": {
+    "unseen_mean_delta_minimum": 0.015,
+    "minimum_improved_unseen_metrics": 2,
+    "minimum_unseen_metric_delta": -0.01,
+    "minimum_seen_metric_delta": -0.015,
+    "maximum_integrity_drop": 0.01
+  },
+  "output_dir": "outputs/stage2_preference_eval/e110_e81_orpo_n3_gate"
+}

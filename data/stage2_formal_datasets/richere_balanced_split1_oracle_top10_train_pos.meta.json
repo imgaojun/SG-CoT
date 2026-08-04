@@ -1,0 +1,20 @@
+{
+  "dataset_name": "richere_balanced_split1_oracle_top10_train_pos",
+  "file_name": "richere_balanced_split1_oracle_top10_train_pos.jsonl",
+  "num_examples": 2056,
+  "data_root": "data/processed/type_holdout",
+  "dataset": "richere-en",
+  "protocol": "balanced-subtype-v1",
+  "split": "split1",
+  "part": "train",
+  "schema_path": "data/schema/richere-en.event_schema.json",
+  "candidate_source": "oracle",
+  "top_k": 10,
+  "prediction_tag": null,
+  "prediction_model": null,
+  "prediction_part": null,
+  "selection_mode": "positive_only",
+  "negative_ratio": null,
+  "seed": 13,
+  "max_examples": null
+}

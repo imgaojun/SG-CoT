@@ -1,0 +1,20 @@
+{
+  "id": "e110a_e81_k4_seed1104",
+  "profile": "e81",
+  "model_path": "/workspace/project/outputs/stage2_adaptive_runs_user/richere_split1_qwen3_4b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_e81_trigger_locked_arbitration_glm51_full1500_thinking_evidence_cot_full",
+  "input_jsonl": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_e81_trigger_locked_arbitration_glm51_full1500_thinking_evidence_cot_train_pos.jsonl",
+  "output_dir": "/workspace/project/outputs/stage2_preference_mining/e110a_e81_k4_seed1104",
+  "preference_name": "richere_balanced_split1_e110a_e81_reasoning_path_orpo_k4_seed1104",
+  "num_samples": 4,
+  "temperature": 0.8,
+  "top_p": 0.95,
+  "max_new_tokens": 1024,
+  "seed": 1104,
+  "sample_round": 0,
+  "cutoff_len": 1536,
+  "min_pairs": 900,
+  "length_ratio": [0.7, 1.3],
+  "teacher_fallback_max_fraction": 0.3,
+  "shards": 4,
+  "gpus": [1, 2, 6, 7]
+}

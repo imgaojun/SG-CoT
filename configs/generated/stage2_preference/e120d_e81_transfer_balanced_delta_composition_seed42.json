@@ -1,0 +1,15 @@
+{
+  "experiment_id": "e120d_e81_transfer_balanced_delta_composition_seed42",
+  "base_model": "/workspace/project/outputs/stage2_adaptive_runs_user/richere_split1_qwen3_4b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_e81_trigger_locked_arbitration_glm51_full1500_thinking_evidence_cot_full",
+  "weights_json": "/workspace/project/outputs/stage2_preference_mining/e120c_e81_atomic_transfer_balance_seed42/transfer_balanced_weights.json",
+  "composition_scale": 5.0,
+  "output_dir": "/workspace/project/outputs/stage2_preference_runs/e120d_e81_transfer_balanced_delta_composition_seed42",
+  "gate": {
+    "masked_mean_margin_delta_min": 0.005,
+    "masked_each_category_positive": true,
+    "full_response_mean_margin_delta_positive": true,
+    "full_response_each_category_positive": true,
+    "chosen_full_logp_delta_min": -0.02
+  },
+  "test_data_access": false
+}

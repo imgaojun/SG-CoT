@@ -1,0 +1,15 @@
+{
+  "id": "e112c_strict_sgcot_rpo_n3_gate",
+  "seeds": [42, 8322, 8333],
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 20260712,
+  "requirements": {
+    "all_unseen_macro_metric_means_positive": true,
+    "macro_micro_directions_match": true,
+    "argument_ci_lower_positive": true,
+    "trigger_ci_lower_positive": true,
+    "event_point_positive": true,
+    "minimum_nonnegative_heldout_types": 6
+  },
+  "output_dir": "outputs/stage2_strict_eval/e112b_sgcot_rpo_n3_gate"
+}

@@ -1,0 +1,62 @@
+{
+  "base_model": "/workspace/models/LLM-Research/Qwen3-1.7B",
+  "runs": [
+    {
+      "tag": "outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2__sharedbase_fix_execution_gate",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2__sharedbase_fix_execution_gate/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2/sharedbase_fix_execution_gate/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2/sharedbase_fix_execution_gate/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2/sharedbase_fix_execution_gate/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2/sharedbase_fix_execution_gate/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2/sharedbase_fix_execution_gate/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2/sharedbase_fix_execution_gate/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2/sharedbase_fix_execution_gate/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2/sharedbase_fix_execution_gate/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_outcome15cal_nlltop15_type_role_hint_plan_lite_noaux_reasonos2/sharedbase_fix_execution_gate/forced_reason/test_unseen"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "branch": "outcome15cal_nlltop15_type_role_hint_plan_lite_routeauxclf1x_reasonos2",
+      "reason": "sharedbase_fix_execution_gate_failed"
+    }
+  ]
+}

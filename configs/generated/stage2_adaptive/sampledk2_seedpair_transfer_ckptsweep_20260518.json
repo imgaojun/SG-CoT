@@ -1,0 +1,27 @@
+{
+  "id": "sampled_k2_seedpair_transfer_ckptsweep_20260518",
+  "kind": "analysis_config",
+  "created_at": "2026-05-18T12:36:20+08:00",
+  "trained_branch": "sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+  "checkpoints": [
+    "checkpoint-25",
+    "checkpoint-50",
+    "checkpoint-75",
+    "checkpoint-100",
+    "checkpoint-125",
+    "checkpoint-150",
+    "checkpoint-175",
+    "checkpoint-176"
+  ],
+  "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+  "split": "dev_seen",
+  "seed_pairs": [
+    [17, 18],
+    [19, 20],
+    [21, 22],
+    [23, 24]
+  ],
+  "dataset_manifest": "configs/generated/stage2_adaptive/sampledk2_seedpair_transfer_checkpoint50_20260518.json",
+  "output_root": "outputs/stage2_adaptive_route_seedpair_transfer_ckptsweep_20260518/sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+  "report": "reports/2026-05-18_stage2_sampled_k2_seedpair_transfer_router_checkpoint_sweep.md"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "2026-05-17_stage2_modular_dualexpert_train_teacher_outputs_d1930_r2058",
+  "created_at": "2026-05-17T08:56:39+08:00",
+  "purpose": "Generate paired train-split expert outputs required to train an independent utility router.",
+  "dataset": {
+    "name": "richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle",
+    "split": "train",
+    "source_jsonl": "data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_train_pos.jsonl",
+    "label_jsonl": "data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome_l15bal30_15_train_labels.jsonl"
+  },
+  "inputs_to_generate": {
+    "direct_eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_balrouteaux_reasonos2_from_noaux_forced_direct_train_pos.jsonl",
+    "reason_eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_reasonos2_from_noaux_forced_reason_train_pos.jsonl"
+  },
+  "teachers": {
+    "direct": {
+      "name": "balrouteaux_checkpoint-1930_forced_direct_train",
+      "adapter": "outputs/stage2_adaptive_runs_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_balrouteaux_reasonos2_from_noaux_full/checkpoint-1930",
+      "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_balrouteaux_reasonos2_from_noaux_forced_direct_train_pos.jsonl",
+      "output_dir": "outputs/stage2_modular_dualexpert/train_teacher_outputs_d1930_r2058_20260517/direct_expert_forced_direct_train"
+    },
+    "reason": {
+      "name": "warmstart_checkpoint-2058_forced_reason_train",
+      "adapter": "outputs/stage2_adaptive_runs_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_reasonos2_from_noaux_full/checkpoint-2058",
+      "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_outcome_l15bal30_15_type_role_hint_plan_lite_routeauxclf1x_pairdirect_reasonos2_from_noaux_forced_reason_train_pos.jsonl",
+      "output_dir": "outputs/stage2_modular_dualexpert/train_teacher_outputs_d1930_r2058_20260517/reason_expert_forced_reason_train"
+    }
+  },
+  "outputs": {
+    "root": "outputs/stage2_modular_dualexpert/train_teacher_outputs_d1930_r2058_20260517",
+    "logs": [
+      "outputs/stage2_adaptive_runs_user_logs/modular_dualexpert_teacher_d1930_direct_train_20260517.log",
+      "outputs/stage2_adaptive_runs_user_logs/modular_dualexpert_teacher_r2058_reason_train_20260517.log"
+    ]
+  },
+  "commands": [
+    "python3 scripts/build_modular_dualexpert_train_teacher_inputs_20260517.py",
+    "bash scripts/launch_modular_dualexpert_train_teacher_outputs_20260517.sh 1 2"
+  ]
+}

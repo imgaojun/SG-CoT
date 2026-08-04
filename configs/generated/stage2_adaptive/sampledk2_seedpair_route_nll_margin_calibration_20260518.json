@@ -1,0 +1,54 @@
+{
+  "id": "sampled_k2_seedpair_route_nll_margin_calibration_20260518",
+  "kind": "analysis_config",
+  "created_at": "2026-05-18T13:49:02+08:00",
+  "updated_at": "2026-05-18T13:49:02+08:00",
+  "branch": "sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+  "split": "dev_seen",
+  "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+  "transfer_dataset_id": "sampled_k2_seedpair_transfer_ckpt50_20260518",
+  "seed_pairs": [
+    {
+      "name": "17_18",
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair17_18_dev_seen_pos"
+    },
+    {
+      "name": "19_20",
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair19_20_dev_seen_pos"
+    },
+    {
+      "name": "21_22",
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair21_22_dev_seen_pos"
+    },
+    {
+      "name": "23_24",
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair23_24_dev_seen_pos"
+    }
+  ],
+  "checkpoints": [
+    "checkpoint-25",
+    "checkpoint-50",
+    "checkpoint-75",
+    "checkpoint-100"
+  ],
+  "margin_thresholds": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35
+  ],
+  "top_budgets": [
+    0.03,
+    0.05,
+    0.076,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "output_root": "/mnt/disk/gaojun/research/progressive-ee/outputs/stage2_adaptive_route_seedpair_nll_20260518/sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+  "report": "/mnt/disk/gaojun/research/progressive-ee/reports/2026-05-18_stage2_sampled_k2_seedpair_route_nll_margin_calibration.md"
+}

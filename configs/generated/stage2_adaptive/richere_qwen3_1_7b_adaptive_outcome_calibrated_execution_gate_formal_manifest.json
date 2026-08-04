@@ -1,0 +1,14 @@
+{
+  "base_model": "/workspace/models/LLM-Research/Qwen3-1.7B",
+  "runs": [],
+  "skipped": [
+    {
+      "branch": "outcome15cal_nlltop10_type_role_hint_plan_lite_routeaux2x_reasonos2",
+      "reason": "execution_gate_failed"
+    },
+    {
+      "branch": "outcome15cal_nlltop15_type_role_hint_plan_lite_routeaux2x_reasonos2",
+      "reason": "execution_gate_failed"
+    }
+  ]
+}

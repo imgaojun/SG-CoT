@@ -1,0 +1,29 @@
+import sys
+from pathlib import Path
+
+
+REPO = Path(__file__).resolve().parents[1]
+if REPO.as_posix() not in sys.path:
+    sys.path.insert(0, REPO.as_posix())
+
+import scripts.calibrate_modular_dualexpert_aet_rankstable_router_m04a_dev_20260520 as cal
+
+
+cal.cal.BRANCH = "aet_positive_retention_router_m05_routecls_noauxwarm_lr2e6_save50"
+cal.cal.SCORE_ROOT = cal.cal.REPO / "outputs/stage2_modular_dualexpert/aet_positive_retention_router_m05_20260521/route_likelihood" / cal.cal.BRANCH
+cal.cal.OUT_JSON = cal.cal.REPO / "reports/artifacts/2026-05-21_stage2_modular_dualexpert_aet_positive_retention_router_m05_dev.json"
+cal.cal.OUT_MD = cal.cal.REPO / "reports/2026-05-21_stage2_modular_dualexpert_aet_positive_retention_router_m05_dev.md"
+BASE_RENDER_REPORT = cal.render_report
+
+
+def render_report(payload):
+    return BASE_RENDER_REPORT(payload).replace(
+        "# A/E/T Rank-Stable Router M04A Dev Sweep",
+        "# A/E/T Positive-Retention Router M05 Dev Sweep",
+        1,
+    )
+
+
+if __name__ == "__main__":
+    cal.render_report = render_report
+    cal.main()

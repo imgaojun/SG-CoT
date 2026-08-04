@@ -1,0 +1,27 @@
+{
+  "id": "e129a_nested_jtrial_protocol_v1",
+  "base_protocol": "balanced-subtype-v2-confirmation",
+  "base_split": "split1",
+  "heldout_types": [
+    "Justice:Trial-Hearing"
+  ],
+  "prior_strict_heldout_types": [
+    "Business:Start-Org",
+    "Conflict:Demonstrate",
+    "Justice:Charge-Indict",
+    "Life:Marry",
+    "Personnel:End-Position",
+    "Transaction:Transfer-Ownership"
+  ],
+  "output_protocol": "e129-nested-jtrial-v1",
+  "candidate_source": "oracle_mixed_noise",
+  "candidate_order_mode": "shuffle",
+  "top_k": 10,
+  "seed": 13,
+  "mix_seed": 1290,
+  "minimum_nested_train_rows": 1900,
+  "minimum_pseudo_unseen_rows": 75,
+  "minimum_filtered_trace_rows": 1000,
+  "maximum_direct_share": 0.67,
+  "source_trace_jsonl": "data/stage2_confirmation_e127/richere_v2confirm_split1_strict_seenonly_oracle_mixed_noise_top10_shuffle_sgcot_autocluster_e127a_train_pos.jsonl"
+}

@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-06-01T10:39:29+08:00",
+  "script": "scripts/generate_llm_reasoning_e36_20260531.py",
+  "source_train": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_train_pos.jsonl",
+  "output_dir": "/mnt/disk/gaojun/research/progressive-ee/outputs/stage2_llm_reasoning_e36/llm_reasoning_smoke100_20260531",
+  "limit": 100,
+  "seed": 20260531,
+  "model": "deepseek-v4-pro",
+  "base_url": "${LLM_BASE_URL}",
+  "workers": 4,
+  "timeout": 240,
+  "max_tokens": 900
+}

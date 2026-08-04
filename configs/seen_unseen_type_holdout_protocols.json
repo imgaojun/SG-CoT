@@ -1,0 +1,46 @@
+{
+  "ace05-en": {
+    "balanced-subtype-v1": [
+      "Conflict:Demonstrate",
+      "Contact:Phone-Write",
+      "Justice:Arrest-Jail",
+      "Life:Injure",
+      "Personnel:Start-Position",
+      "Transaction:Transfer-Ownership"
+    ],
+    "contact-family-v1": [
+      "Contact:Meet",
+      "Contact:Phone-Write"
+    ]
+  },
+  "richere-en": {
+    "balanced-subtype-v2-confirmation": [
+      "Business:Start-Org",
+      "Conflict:Demonstrate",
+      "Justice:Charge-Indict",
+      "Life:Marry",
+      "Personnel:End-Position",
+      "Transaction:Transfer-Ownership"
+    ],
+    "balanced-subtype-v1": [
+      "Contact:Broadcast",
+      "Contact:Correspondence",
+      "Justice:Arrest-Jail",
+      "Justice:Sentence",
+      "Life:Injure",
+      "Manufacture:Artifact",
+      "Personnel:Elect",
+      "Transaction:Transaction"
+    ],
+    "contact-family-v1": [
+      "Contact:Broadcast",
+      "Contact:Contact",
+      "Contact:Correspondence",
+      "Contact:Meet"
+    ],
+    "movement-family-v1": [
+      "Movement:Transport-Artifact",
+      "Movement:Transport-Person"
+    ]
+  }
+}

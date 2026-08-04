@@ -1,0 +1,29 @@
+{
+  "id": "e121a_confirmation_data",
+  "dataset": "richere-en",
+  "protocol": "balanced-subtype-v2-confirmation",
+  "selection_split": "split1",
+  "train_split": "split1",
+  "eval_splits": ["split1", "split2", "split3", "split4", "split5"],
+  "candidate_scope": {"train": "seen_only", "dev_and_test": "all"},
+  "candidate_source": "oracle_mixed_noise",
+  "candidate_order_mode": "shuffle",
+  "candidate_seed": 13,
+  "top_k": 10,
+  "selection_mode": "positive_only",
+  "surface_protocol": "shortest_unique_evidence_v1",
+  "deduplicate_by": "wnd_id",
+  "expected_pooled_raw_rows": 332,
+  "expected_pooled_unique_rows": 272,
+  "expected_pooled_event_mentions": 317,
+  "heldout_selection": {
+    "exclude_prior_richere_holdouts": true,
+    "require_remaining_seen_sibling": true,
+    "min_split1_train_mentions": 20,
+    "max_split1_train_mentions": 250,
+    "per_family_choice": "highest_frequency_then_lexicographic",
+    "uses_model_predictions": false,
+    "uses_test_metrics": false
+  },
+  "output_dir": "data/stage2_confirmation_e121"
+}

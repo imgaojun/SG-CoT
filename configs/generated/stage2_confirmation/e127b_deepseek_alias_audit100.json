@@ -1,0 +1,34 @@
+{
+  "id": "e127b_deepseek_alias_audit100",
+  "protocol": "e127b-independent-deepseek-alias-audit100-v1",
+  "test_access": false,
+  "input_jsonl": "data/stage2_confirmation_e127/richere_v2confirm_split1_strict_seenonly_oracle_mixed_noise_top10_shuffle_sgcot_autocluster_e127a_train_pos.jsonl",
+  "input_jsonl_sha256": "2da251e5a0f56e7b7c783299f2c24ab1160513eab0dd73ffc90f869d2c502d8d",
+  "selection": {
+    "unit": "wnd_id",
+    "method": "stable_sha256_rank",
+    "sample_size": 100,
+    "seed": 1270,
+    "sample_wnd_ids_sha256": "c2c9c9baa38bfcbf28a1f67ecdf8c48e9806613e036df3894ab8c92a0d5d215a"
+  },
+  "verifier_model": "deepseek-v4-pro",
+  "verifier_profile": "target_role_alias_v1",
+  "hard_profile": "generator_hard_verify",
+  "verifier_reasoning_effort": "high",
+  "verifier_max_tokens": 8192,
+  "workers": 16,
+  "max_attempts": 3,
+  "retry_policy": "call_or_parse_failures_only",
+  "row_selection_uses_verifier": false,
+  "gate": {
+    "exact_sample_size": 100,
+    "all_hard_valid": true,
+    "all_receive_valid_judgment": true,
+    "minimum_semantic_pass": 85
+  },
+  "decision": {
+    "pass": "freeze E127 inputs and prepare matching SG-CoT training configs",
+    "fail": "stop without changing judge, threshold, sample, or traces"
+  },
+  "output_dir": "outputs/stage2_confirmation_e127/e127b_deepseek_alias_audit100"
+}

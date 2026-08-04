@@ -1,0 +1,51 @@
+{
+  "id": "2026-05-04_ace05_schema_para_budget_failure_diagnostic",
+  "base_model": "/workspace/models/LLM-Research/Llama-3.2-3B-Instruct",
+  "dataset": "ACE05 split1 oracle_mixed_noise top10 shuffle dev_seen",
+  "objective": "Diagnose whether ACE05 schemapara underperforms because of decoding budget or sample-level argument/event regressions.",
+  "selection_results": {
+    "baseline": {
+      "checkpoint": "checkpoint-2110",
+      "run_dir": "outputs/stage2_full_sft_runs_stepmatch_user/ace05_split1_llama3_2_3b_instruct_oracle_mixed_noise_top10_shuffle_mixcurr80c20_full",
+      "selection_summary": "outputs/stage2_full_sft_runs_stepmatch_devpick_user/ace05_split1_llama3_2_3b_instruct_oracle_mixed_noise_top10_shuffle_mixcurr80c20_full_max512/selection_summary.json",
+      "selected_eval_dir": "outputs/stage2_full_sft_runs_stepmatch_devpick_user/ace05_split1_llama3_2_3b_instruct_oracle_mixed_noise_top10_shuffle_mixcurr80c20_full_max512/checkpoint-2110",
+      "selected_max_new_tokens": 512,
+      "dev_seen_jsonl": "data/stage2_cot_datasets/ace05_balanced_split1_oracle_mixed_noise_top10_shuffle_mixcurr80c20_dev_seen_pos.jsonl"
+    },
+    "schemapara": {
+      "checkpoint": "checkpoint-2321",
+      "run_dir": "outputs/stage2_full_sft_runs_stepmatch_user/ace05_split1_llama3_2_3b_instruct_oracle_mixed_noise_top10_shuffle_mixcurr80c20_schemapara_full",
+      "selection_summary": "outputs/stage2_full_sft_runs_stepmatch_devpick_user/ace05_split1_llama3_2_3b_instruct_oracle_mixed_noise_top10_shuffle_mixcurr80c20_schemapara_full_max256/selection_summary.json",
+      "selected_eval_dir": "outputs/stage2_full_sft_runs_stepmatch_devpick_user/ace05_split1_llama3_2_3b_instruct_oracle_mixed_noise_top10_shuffle_mixcurr80c20_schemapara_full_max256/checkpoint-2321",
+      "selected_max_new_tokens": 256,
+      "dev_seen_jsonl": "data/stage2_cot_datasets/ace05_balanced_split1_oracle_mixed_noise_top10_shuffle_mixcurr80c20_schemapara_dev_seen_pos.jsonl"
+    }
+  },
+  "budget_contrast_runs": [
+    {
+      "label": "baseline_max256",
+      "checkpoint": "checkpoint-2110",
+      "run_dir": "outputs/stage2_full_sft_runs_stepmatch_user/ace05_split1_llama3_2_3b_instruct_oracle_mixed_noise_top10_shuffle_mixcurr80c20_full",
+      "eval_jsonl": "data/stage2_cot_datasets/ace05_balanced_split1_oracle_mixed_noise_top10_shuffle_mixcurr80c20_dev_seen_pos.jsonl",
+      "output_dir": "outputs/stage2_diagnostics/ace05_schema_para_budget_failure_20260504/baseline_checkpoint-2110_max256",
+      "max_new_tokens": 256,
+      "batch_size": 8
+    },
+    {
+      "label": "schemapara_max512",
+      "checkpoint": "checkpoint-2321",
+      "run_dir": "outputs/stage2_full_sft_runs_stepmatch_user/ace05_split1_llama3_2_3b_instruct_oracle_mixed_noise_top10_shuffle_mixcurr80c20_schemapara_full",
+      "eval_jsonl": "data/stage2_cot_datasets/ace05_balanced_split1_oracle_mixed_noise_top10_shuffle_mixcurr80c20_schemapara_dev_seen_pos.jsonl",
+      "output_dir": "outputs/stage2_diagnostics/ace05_schema_para_budget_failure_20260504/schemapara_checkpoint-2321_max512",
+      "max_new_tokens": 512,
+      "batch_size": 8
+    }
+  ],
+  "analysis_outputs": {
+    "output_root": "outputs/stage2_diagnostics/ace05_schema_para_budget_failure_20260504",
+    "pairwise_selected_budget_json": "reports/artifacts/2026-05-04_ace05_schemapara_pairwise_selected_budget.json",
+    "pairwise_budget_contrast_json": "reports/artifacts/2026-05-04_ace05_schemapara_pairwise_budget_contrast.json",
+    "baseline_max256_json_failure": "reports/artifacts/2026-05-04_ace05_baseline_max256_json_failure.json",
+    "schemapara_max512_json_failure": "reports/artifacts/2026-05-04_ace05_schemapara_max512_json_failure.json"
+  }
+}

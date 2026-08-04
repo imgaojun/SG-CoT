@@ -1,0 +1,12 @@
+{
+  "id": "e121e_confirmation_gate",
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 20260712,
+  "pooled_macro_mean_delta_min": 0.015,
+  "required_positive_seed_metric_cells": 7,
+  "required_nonnegative_types": 5,
+  "minimum_per_type_mean_delta": -0.02,
+  "minimum_seen_mean_delta": -0.025,
+  "minimum_seen_metric_delta": -0.05,
+  "maximum_integrity_drop": 0.01
+}

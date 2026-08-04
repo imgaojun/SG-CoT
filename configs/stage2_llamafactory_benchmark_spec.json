@@ -1,0 +1,206 @@
+{
+  "lab_env_file": "../llamafactory-lab/.env",
+  "lab_image_template": "{IMAGE_NAME}:{LLAMAFACTORY_VERSION}-py{PYTHON_VERSION}",
+  "repo_mount_container": "/workspace/project",
+  "default_runtime": {
+    "gpu_devices_host": "1",
+    "shm_size": "16g",
+    "single_gpu_benchmark": true,
+    "docker_user": "root",
+    "host_uid": 1000,
+    "host_gid": 1000
+  },
+  "models": {
+    "qwen3_0_6b_instruct": {
+      "family": "qwen3",
+      "template": "qwen",
+      "model_path_host": "/mnt/disk/gaojun/models/LLM-Research/Qwen3-0.6B",
+      "model_path_container": "/workspace/models/LLM-Research/Qwen3-0.6B",
+      "notes": "small qwen instruction-tuned checkpoint"
+    },
+    "qwen3_0_6b_base": {
+      "family": "qwen3",
+      "template": "qwen",
+      "model_path_host": "/mnt/disk/gaojun/models/LLM-Research/Qwen3-0.6B-Base",
+      "model_path_container": "/workspace/models/LLM-Research/Qwen3-0.6B-Base",
+      "notes": "small qwen baseline"
+    },
+    "qwen3_1_7b_instruct": {
+      "family": "qwen3",
+      "template": "qwen",
+      "model_path_host": "/mnt/disk/gaojun/models/LLM-Research/Qwen3-1.7B",
+      "model_path_container": "/workspace/models/LLM-Research/Qwen3-1.7B",
+      "notes": "recommended qwen instruction-tuned checkpoint"
+    },
+    "qwen3_1_7b_base": {
+      "family": "qwen3",
+      "template": "qwen",
+      "model_path_host": "/mnt/disk/gaojun/models/LLM-Research/Qwen3-1.7B-Base",
+      "model_path_container": "/workspace/models/LLM-Research/Qwen3-1.7B-Base",
+      "notes": "recommended small/medium qwen baseline"
+    },
+    "qwen3_4b_instruct": {
+      "family": "qwen3",
+      "template": "qwen",
+      "model_path_host": "/mnt/disk/gaojun/models/LLM-Research/Qwen3-4B",
+      "model_path_container": "/workspace/models/LLM-Research/Qwen3-4B",
+      "notes": "recommended stronger qwen instruction-tuned checkpoint"
+    },
+    "qwen3_4b_base": {
+      "family": "qwen3",
+      "template": "qwen",
+      "model_path_host": "/mnt/disk/gaojun/models/LLM-Research/Qwen3-4B-Base",
+      "model_path_container": "/workspace/models/LLM-Research/Qwen3-4B-Base",
+      "notes": "recommended stronger qwen baseline"
+    },
+    "llama3_2_1b": {
+      "family": "llama3",
+      "template": "llama3",
+      "model_path_host": "/mnt/disk/gaojun/models/LLM-Research/Llama-3.2-1B",
+      "model_path_container": "/workspace/models/LLM-Research/Llama-3.2-1B",
+      "notes": "small llama baseline"
+    },
+    "llama3_2_1b_instruct": {
+      "family": "llama3",
+      "template": "llama3",
+      "model_path_host": "/mnt/disk/gaojun/models/LLM-Research/Llama-3.2-1B-Instruct",
+      "model_path_container": "/workspace/models/LLM-Research/Llama-3.2-1B-Instruct",
+      "notes": "small llama instruction-tuned checkpoint"
+    },
+    "llama3_2_3b": {
+      "family": "llama3",
+      "template": "llama3",
+      "model_path_host": "/mnt/disk/gaojun/models/LLM-Research/Llama-3.2-3B",
+      "model_path_container": "/workspace/models/LLM-Research/Llama-3.2-3B",
+      "notes": "stronger llama baseline"
+    },
+    "llama3_2_3b_instruct": {
+      "family": "llama3",
+      "template": "llama3",
+      "model_path_host": "/mnt/disk/gaojun/models/LLM-Research/Llama-3.2-3B-Instruct",
+      "model_path_container": "/workspace/models/LLM-Research/Llama-3.2-3B-Instruct",
+      "notes": "stronger llama instruction-tuned checkpoint"
+    }
+  },
+  "benchmark_slices": {
+    "richere_balanced_split1_predicted_top5": {
+      "dataset_dir_host": "data/stage2_benchmark_datasets",
+      "dataset_dir_container": "/workspace/project/data/stage2_benchmark_datasets",
+      "dataset_name": "richere_balanced_subtype_v1_split1_predicted_top5_bench",
+      "dataset_file": "richere_balanced_subtype_v1_split1_predicted_top5_bench.jsonl",
+      "source_dataset": "richere-en",
+      "source_protocol": "balanced-subtype-v1",
+      "source_split": "split1",
+      "source_part": "dev_seen",
+      "prediction_model": "Qwen/Qwen3-Reranker-8B",
+      "prediction_tag": "qwen8b_main",
+      "candidate_source": "predicted",
+      "top_k": 5,
+      "max_examples": 100,
+      "sample_seed": 13,
+      "notes": "main hard-enough benchmark slice"
+    },
+    "richere_balanced_split1_predicted_top5_full": {
+      "dataset_dir_host": "data/stage2_benchmark_datasets",
+      "dataset_dir_container": "/workspace/project/data/stage2_benchmark_datasets",
+      "dataset_name": "richere_balanced_subtype_v1_split1_predicted_top5_full_bench",
+      "dataset_file": "richere_balanced_subtype_v1_split1_predicted_top5_full_bench.jsonl",
+      "source_dataset": "richere-en",
+      "source_protocol": "balanced-subtype-v1",
+      "source_split": "split1",
+      "source_part": "dev_seen",
+      "prediction_model": "Qwen/Qwen3-Reranker-8B",
+      "prediction_tag": "qwen8b_main",
+      "candidate_source": "predicted",
+      "top_k": 5,
+      "max_examples": 1000,
+      "sample_seed": 13,
+      "notes": "full available richere split1 dev_seen predicted top5 slice"
+    },
+    "ace05_balanced_split1_predicted_top5": {
+      "dataset_dir_host": "data/stage2_benchmark_datasets",
+      "dataset_dir_container": "/workspace/project/data/stage2_benchmark_datasets",
+      "dataset_name": "ace05_balanced_subtype_v1_split1_predicted_top5_bench",
+      "dataset_file": "ace05_balanced_subtype_v1_split1_predicted_top5_bench.jsonl",
+      "source_dataset": "ace05-en",
+      "source_protocol": "balanced-subtype-v1",
+      "source_split": "split1",
+      "source_part": "dev_seen",
+      "prediction_model": "Qwen/Qwen3-Reranker-8B",
+      "prediction_tag": "qwen8b_main",
+      "candidate_source": "predicted",
+      "top_k": 5,
+      "max_examples": 100,
+      "sample_seed": 13,
+      "notes": "cross-check benchmark slice"
+    }
+  },
+  "throughput_presets": {
+    "stageA_default": {
+      "finetuning_type": "lora",
+      "lora_rank": 8,
+      "lora_target": "all",
+      "cutoff_len": 1024,
+      "max_samples": 1000,
+      "per_device_train_batch_size": 2,
+      "gradient_accumulation_steps": 8,
+      "packing": true,
+      "max_steps": 50,
+      "learning_rate": 5.0e-05,
+      "warmup_ratio": 0.03,
+      "bf16": true
+    },
+    "throughput_short_ctx": {
+      "finetuning_type": "lora",
+      "lora_rank": 8,
+      "lora_target": "all",
+      "cutoff_len": 1024,
+      "max_samples": 1000,
+      "per_device_train_batch_size": 4,
+      "gradient_accumulation_steps": 4,
+      "packing": true,
+      "max_steps": 50,
+      "learning_rate": 5.0e-05,
+      "warmup_ratio": 0.03,
+      "bf16": true
+    },
+    "throughput_mid_ctx": {
+      "finetuning_type": "lora",
+      "lora_rank": 8,
+      "lora_target": "all",
+      "cutoff_len": 1536,
+      "max_samples": 1000,
+      "per_device_train_batch_size": 2,
+      "gradient_accumulation_steps": 8,
+      "packing": true,
+      "max_steps": 50,
+      "learning_rate": 5.0e-05,
+      "warmup_ratio": 0.03,
+      "bf16": true
+    },
+    "throughput_long_ctx": {
+      "finetuning_type": "lora",
+      "lora_rank": 8,
+      "lora_target": "all",
+      "cutoff_len": 2048,
+      "max_samples": 1000,
+      "per_device_train_batch_size": 1,
+      "gradient_accumulation_steps": 16,
+      "packing": false,
+      "max_steps": 50,
+      "learning_rate": 5.0e-05,
+      "warmup_ratio": 0.03,
+      "bf16": true
+    }
+  },
+  "default_logging": {
+    "stage": "sft",
+    "do_train": true,
+    "overwrite_cache": true,
+    "preprocessing_num_workers": 8,
+    "save_strategy": "no",
+    "eval_strategy": "no",
+    "logging_steps": 5,
+    "report_to": "none"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "input_jsonl": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_e81_trigger_locked_arbitration_glm51_full1500_thinking_evidence_cot_train_pos.jsonl",
+  "samples_glob": "/workspace/project/outputs/stage2_preference_mining/e110a_e81_k4_seed1104/samples.shard-*.jsonl",
+  "model_path": "/workspace/project/outputs/stage2_adaptive_runs_user/richere_split1_qwen3_4b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_e81_trigger_locked_arbitration_glm51_full1500_thinking_evidence_cot_full",
+  "output_dir": "/workspace/project/outputs/stage2_preference_mining/e114a_e81_atomic_counterfactual_seed1140",
+  "dataset_dir": "/workspace/project/data/stage2_adaptive_datasets",
+  "dataset_info": "/workspace/project/data/stage2_adaptive_datasets/dataset_info.json",
+  "preference_name": "richere_balanced_split1_e114a_e81_atomic_counterfactual_orpo_seed1140",
+  "deterministic_preference_name": "richere_balanced_split1_e114c3_e81_atomic_counterfactual_deterministic_only_seed1140",
+  "smoke_name": "richere_balanced_split1_e114b0_e81_atomic_counterfactual_orpo_smoke16",
+  "finalonly_prompt_jsonl": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_e77b_e81_rowmatched_control_train_pos.jsonl",
+  "target_pairs": 900,
+  "profile": "e81",
+  "proposal_mode": "observed_first",
+  "renderer_version": "ac_rpo_v1",
+  "cutoff_len": 1536,
+  "min_length_ratio": 0.9,
+  "max_length_ratio": 1.1,
+  "seed": 1140,
+  "category_quotas": {
+    "wrong_type": 180,
+    "trigger_drift": 180,
+    "argument_omission": 180,
+    "event_omission": 180,
+    "extra_frame": 180
+  }
+}

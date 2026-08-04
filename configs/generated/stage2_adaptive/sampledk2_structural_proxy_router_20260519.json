@@ -1,0 +1,156 @@
+{
+  "id": "sampledk2_structural_proxy_router_20260519",
+  "kind": "analysis_config",
+  "created_at": "2026-05-19T15:14:35+08:00",
+  "branch": "sampled_k2_structproxy_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+  "config": "/mnt/disk/gaojun/research/progressive-ee/configs/generated/stage2_adaptive/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_structproxy_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_full_stepmatch.yaml",
+  "output_dir": "/mnt/disk/gaojun/research/progressive-ee/outputs/stage2_adaptive_runs_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_structproxy_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_full",
+  "train_meta": {
+    "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_structproxy_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_train_pos",
+    "file_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_structproxy_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_train_pos.jsonl",
+    "split": "train",
+    "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+    "source_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_train_pos.jsonl",
+    "label_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_train_labels.jsonl",
+    "label_summary_json": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_train_labels.summary.json",
+    "seed_pairs": [
+      {
+        "name": "17_18",
+        "seeds": [
+          17,
+          18
+        ]
+      },
+      {
+        "name": "19_20",
+        "seeds": [
+          19,
+          20
+        ]
+      },
+      {
+        "name": "21_22",
+        "seeds": [
+          21,
+          22
+        ]
+      },
+      {
+        "name": "23_24",
+        "seeds": [
+          23,
+          24
+        ]
+      }
+    ],
+    "negative_strategy": "hard_direct_structural_drift_priority",
+    "excluded_utility_labels": [
+      "ambiguous",
+      "stable_reason_without_any_structural_support"
+    ],
+    "audit": {
+      "source_count": 2056,
+      "confident_label_count": 1919,
+      "skipped_ambiguous_or_missing_count": 137,
+      "total_count": 784,
+      "route_only_count": 784,
+      "route_only_classifier_prompt_count": 784,
+      "route_only_full_extraction_prompt_count": 0,
+      "route_only_rows_with_final": 0,
+      "route_only_direct_rows": 576,
+      "route_only_reason_rows": 208,
+      "direct_count": 576,
+      "reason_count": 208,
+      "reason_rate": 0.2653061224489796,
+      "sampled_evidence_samples_per_route": 2,
+      "seed_pair_row_counts": {
+        "19_20": 196,
+        "21_22": 200,
+        "23_24": 208,
+        "17_18": 180
+      },
+      "positive_unique_count": 36,
+      "stable_direct_count": 1831,
+      "hard_pool_count": 366,
+      "selected_negative_unique_count": 144,
+      "target_negative_unique_count": 144,
+      "positive_repeat_per_pair": 4,
+      "negative_unique_multiplier": 4,
+      "positive_rule": "stable_reason and structural pass on at least 1/4 K2 seed pairs",
+      "negative_rule": "stable_direct hard/direct pool with structural-drift priority"
+    }
+  },
+  "dev_meta": {
+    "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_structproxy_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_dev_seen_seedpairs_pos",
+    "file_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_structproxy_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_dev_seen_seedpairs_pos.jsonl",
+    "split": "dev_seen_seedpairs",
+    "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+    "source_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_dev_seen_pos.jsonl",
+    "label_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.jsonl",
+    "label_summary_json": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.summary.json",
+    "seed_pairs": [
+      {
+        "name": "17_18",
+        "seeds": [
+          17,
+          18
+        ]
+      },
+      {
+        "name": "19_20",
+        "seeds": [
+          19,
+          20
+        ]
+      },
+      {
+        "name": "21_22",
+        "seeds": [
+          21,
+          22
+        ]
+      },
+      {
+        "name": "23_24",
+        "seeds": [
+          23,
+          24
+        ]
+      }
+    ],
+    "excluded_utility_labels": [
+      "ambiguous"
+    ],
+    "audit": {
+      "source_count": 197,
+      "confident_label_count": 177,
+      "skipped_ambiguous_or_missing_count": 20,
+      "total_count": 708,
+      "route_only_count": 708,
+      "route_only_classifier_prompt_count": 708,
+      "route_only_full_extraction_prompt_count": 0,
+      "route_only_rows_with_final": 0,
+      "route_only_direct_rows": 701,
+      "route_only_reason_rows": 7,
+      "direct_count": 701,
+      "reason_count": 7,
+      "reason_rate": 0.009887005649717515,
+      "sampled_evidence_samples_per_route": 2,
+      "seed_pair_row_counts": {
+        "17_18": 177,
+        "19_20": 177,
+        "21_22": 177,
+        "23_24": 177
+      },
+      "positive_unique_count": 15,
+      "stable_direct_count": 162,
+      "hard_pool_count": null,
+      "selected_negative_unique_count": 701,
+      "target_negative_unique_count": null,
+      "positive_repeat_per_pair": 1,
+      "negative_unique_multiplier": null,
+      "positive_rule": "stable_reason and structural pass for this K2 seed pair",
+      "negative_rule": "all non-positive confident examples for this K2 seed pair"
+    }
+  }
+}

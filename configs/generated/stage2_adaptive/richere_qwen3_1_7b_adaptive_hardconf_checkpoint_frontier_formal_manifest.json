@@ -1,0 +1,1637 @@
+{
+  "base_model": "/workspace/models/LLM-Research/Qwen3-1.7B",
+  "runs": [
+    {
+      "tag": "hardconf10_heur10_type_role_hint_plan_lite__free_arg_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_heur10_type_role_hint_plan_lite__free_arg_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_free_arg_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_free_arg_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_free_arg_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_free_arg_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_free_arg_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_free_arg_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_free_arg_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_free_arg_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_free_arg_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_heur10_type_role_hint_plan_lite__reason_expert_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_heur10_type_role_hint_plan_lite__reason_expert_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_reason_expert_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_reason_expert_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_reason_expert_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_reason_expert_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_reason_expert_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_reason_expert_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_reason_expert_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_reason_expert_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_reason_expert_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_heur10_type_role_hint_plan_lite__adaptive_pareto",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_heur10_type_role_hint_plan_lite__adaptive_pareto/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_pareto/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_pareto/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_pareto/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_heur10_type_role_hint_plan_lite__direct_anchor_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_heur10_type_role_hint_plan_lite__direct_anchor_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_direct_anchor_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_direct_anchor_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_direct_anchor_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_heur10_type_role_hint_plan_lite__adaptive_tradeoff_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_heur10_type_role_hint_plan_lite__adaptive_tradeoff_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_heur10_type_role_hint_plan_lite__seen_stable_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_heur10_type_role_hint_plan_lite__seen_stable_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_seen_stable_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_seen_stable_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_seen_stable_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_seen_stable_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_seen_stable_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_seen_stable_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_seen_stable_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_seen_stable_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_seen_stable_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_heur10_type_role_hint_plan_lite__hard_reason_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_heur10_type_role_hint_plan_lite__hard_reason_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_hard_reason_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_hard_reason_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_hard_reason_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_hard_reason_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_hard_reason_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_hard_reason_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_hard_reason_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_hard_reason_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_hard_reason_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_heur10_type_role_hint_plan_lite__balanced_hardroute_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_heur10_type_role_hint_plan_lite__balanced_hardroute_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_balanced_hardroute_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_balanced_hardroute_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_balanced_hardroute_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_heur10_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_heur10_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf15_heur15_type_role_hint_plan_lite__free_arg_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf15_heur15_type_role_hint_plan_lite__free_arg_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_free_arg_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_free_arg_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_free_arg_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_free_arg_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_free_arg_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_free_arg_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_free_arg_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_free_arg_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_free_arg_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf15_heur15_type_role_hint_plan_lite__reason_expert_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf15_heur15_type_role_hint_plan_lite__reason_expert_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_reason_expert_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_reason_expert_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_reason_expert_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_reason_expert_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_reason_expert_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_reason_expert_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_reason_expert_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_reason_expert_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_reason_expert_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf15_heur15_type_role_hint_plan_lite__adaptive_pareto",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf15_heur15_type_role_hint_plan_lite__adaptive_pareto/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_pareto/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_pareto/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_pareto/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf15_heur15_type_role_hint_plan_lite__direct_anchor_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf15_heur15_type_role_hint_plan_lite__direct_anchor_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_direct_anchor_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_direct_anchor_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_direct_anchor_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf15_heur15_type_role_hint_plan_lite__adaptive_tradeoff_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf15_heur15_type_role_hint_plan_lite__adaptive_tradeoff_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf15_heur15_type_role_hint_plan_lite__seen_stable_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf15_heur15_type_role_hint_plan_lite__seen_stable_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_seen_stable_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_seen_stable_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_seen_stable_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_seen_stable_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_seen_stable_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_seen_stable_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_seen_stable_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_seen_stable_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_seen_stable_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf15_heur15_type_role_hint_plan_lite__hard_reason_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf15_heur15_type_role_hint_plan_lite__hard_reason_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_hard_reason_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_hard_reason_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_hard_reason_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_hard_reason_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_hard_reason_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_hard_reason_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_hard_reason_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_hard_reason_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_hard_reason_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf15_heur15_type_role_hint_plan_lite__balanced_hardroute_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf15_heur15_type_role_hint_plan_lite__balanced_hardroute_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_balanced_hardroute_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_balanced_hardroute_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_balanced_hardroute_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf15_heur15_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf15_heur15_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_calibrated_type_role_hint_plan_lite__free_arg_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_calibrated_type_role_hint_plan_lite__free_arg_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_free_arg_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_free_arg_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_free_arg_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_free_arg_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_free_arg_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_free_arg_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_free_arg_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_free_arg_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_free_arg_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_calibrated_type_role_hint_plan_lite__reason_expert_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_calibrated_type_role_hint_plan_lite__reason_expert_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_reason_expert_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_reason_expert_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_reason_expert_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_reason_expert_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_reason_expert_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_reason_expert_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_reason_expert_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_reason_expert_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_reason_expert_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_calibrated_type_role_hint_plan_lite__adaptive_pareto",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_calibrated_type_role_hint_plan_lite__adaptive_pareto/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_pareto/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_pareto/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_pareto/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_pareto/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_calibrated_type_role_hint_plan_lite__direct_anchor_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_calibrated_type_role_hint_plan_lite__direct_anchor_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_direct_anchor_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_direct_anchor_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_direct_anchor_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_direct_anchor_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_calibrated_type_role_hint_plan_lite__adaptive_tradeoff_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_calibrated_type_role_hint_plan_lite__adaptive_tradeoff_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_adaptive_tradeoff_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_calibrated_type_role_hint_plan_lite__seen_stable_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_calibrated_type_role_hint_plan_lite__seen_stable_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_seen_stable_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_seen_stable_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_seen_stable_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_seen_stable_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_seen_stable_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_seen_stable_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_seen_stable_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_seen_stable_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_seen_stable_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_calibrated_type_role_hint_plan_lite__hard_reason_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_calibrated_type_role_hint_plan_lite__hard_reason_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_hard_reason_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_hard_reason_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_hard_reason_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_hard_reason_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_hard_reason_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_hard_reason_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_hard_reason_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_hard_reason_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_hard_reason_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_calibrated_type_role_hint_plan_lite__balanced_hardroute_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_calibrated_type_role_hint_plan_lite__balanced_hardroute_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_balanced_hardroute_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_balanced_hardroute_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_balanced_hardroute_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_calibrated_type_role_hint_plan_lite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_calibrated_type_role_hint_plan_lite/frontier_balanced_hardroute_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_directdup__free_arg_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_directdup__free_arg_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_free_arg_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_free_arg_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_free_arg_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_free_arg_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_free_arg_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_free_arg_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_free_arg_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_free_arg_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_free_arg_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_directdup__reason_expert_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_directdup__reason_expert_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_reason_expert_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_reason_expert_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_reason_expert_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_reason_expert_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_reason_expert_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_reason_expert_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_reason_expert_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_reason_expert_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_reason_expert_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_directdup__adaptive_pareto",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_directdup__adaptive_pareto/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_pareto/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_pareto/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_pareto/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_pareto/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_pareto/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_pareto/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_pareto/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_pareto/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_pareto/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_directdup__direct_anchor_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_directdup__direct_anchor_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_direct_anchor_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_direct_anchor_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_direct_anchor_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_direct_anchor_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_direct_anchor_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_direct_anchor_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_direct_anchor_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_direct_anchor_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_direct_anchor_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_directdup__adaptive_tradeoff_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_directdup__adaptive_tradeoff_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_tradeoff_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_tradeoff_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_tradeoff_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_tradeoff_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_tradeoff_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_tradeoff_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_tradeoff_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_tradeoff_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_adaptive_tradeoff_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_directdup__seen_stable_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_directdup__seen_stable_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_seen_stable_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_seen_stable_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_seen_stable_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_seen_stable_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_seen_stable_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_seen_stable_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_seen_stable_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_seen_stable_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_seen_stable_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_directdup__hard_reason_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_directdup__hard_reason_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_hard_reason_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_hard_reason_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_hard_reason_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_hard_reason_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_hard_reason_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_hard_reason_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_hard_reason_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_hard_reason_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_hard_reason_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "hardconf10_directdup__balanced_hardroute_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/hardconf10_directdup__balanced_hardroute_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_balanced_hardroute_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_balanced_hardroute_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_balanced_hardroute_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_balanced_hardroute_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_balanced_hardroute_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_balanced_hardroute_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_balanced_hardroute_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_balanced_hardroute_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_hardconf10_directdup_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_hardconf10_directdup/frontier_balanced_hardroute_best/forced_reason/test_unseen"
+        }
+      ]
+    }
+  ]
+}

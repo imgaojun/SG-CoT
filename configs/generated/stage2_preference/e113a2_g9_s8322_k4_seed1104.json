@@ -1,0 +1,15 @@
+{
+  "id": "e113a2_g9_s8322_k4_seed1104",
+  "tag": "s8322",
+  "profile": "g9",
+  "model_path": "outputs/stage2_adaptive_runs_user/richere_split1_qwen3_4b_gollie_style_dualmode_g9_s8322_cotcalib_full/checkpoint-91",
+  "input_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_gollie_style_top10_shuffle_adaptive_hybrid_sgcot_thinking_evidence_cot_train_pos.jsonl",
+  "output_dir": "outputs/stage2_preference_mining/e113a_g9/s8322_k4_seed1104",
+  "num_samples": 4,
+  "temperature": 0.8,
+  "top_p": 0.95,
+  "max_new_tokens": 1024,
+  "seed": 1104,
+  "cutoff_len": 2048,
+  "minimum_pairs": 900
+}

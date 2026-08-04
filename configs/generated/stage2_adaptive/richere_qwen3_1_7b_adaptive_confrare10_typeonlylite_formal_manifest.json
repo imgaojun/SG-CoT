@@ -1,0 +1,68 @@
+{
+  "base_model": "/workspace/models/LLM-Research/Qwen3-1.7B",
+  "runs": [
+    {
+      "tag": "adaptive_confrare10_heur10_typeonlylite_free",
+      "selection_summary": "/workspace/project/outputs/stage2_adaptive_runs_user_devpick/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_typeonlylite_full_free_dev_seen_max512/selection_summary.json",
+      "evals": [
+        {
+          "name": "test",
+          "eval_jsonl": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_typeonlylite_test_pos.jsonl",
+          "output_dir": "/workspace/project/outputs/stage2_adaptive_runs_user_formal/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_typeonlylite/free_route/test"
+        },
+        {
+          "name": "test_seen",
+          "eval_jsonl": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_typeonlylite_test_seen_pos.jsonl",
+          "output_dir": "/workspace/project/outputs/stage2_adaptive_runs_user_formal/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_typeonlylite/free_route/test_seen"
+        },
+        {
+          "name": "test_unseen",
+          "eval_jsonl": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_typeonlylite_test_unseen_pos.jsonl",
+          "output_dir": "/workspace/project/outputs/stage2_adaptive_runs_user_formal/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_typeonlylite/free_route/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "adaptive_confrare10_heur10_typeonlylite_forced_direct",
+      "selection_summary": "/workspace/project/outputs/stage2_adaptive_runs_user_devpick/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_typeonlylite_full_free_dev_seen_max512/selection_summary.json",
+      "evals": [
+        {
+          "name": "test",
+          "eval_jsonl": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_typeonlylite_forced_direct_test_pos.jsonl",
+          "output_dir": "/workspace/project/outputs/stage2_adaptive_runs_user_formal/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_typeonlylite/forced_direct/test"
+        },
+        {
+          "name": "test_seen",
+          "eval_jsonl": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_typeonlylite_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "/workspace/project/outputs/stage2_adaptive_runs_user_formal/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_typeonlylite/forced_direct/test_seen"
+        },
+        {
+          "name": "test_unseen",
+          "eval_jsonl": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_typeonlylite_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "/workspace/project/outputs/stage2_adaptive_runs_user_formal/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_typeonlylite/forced_direct/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "adaptive_confrare10_heur10_typeonlylite_forced_reason",
+      "selection_summary": "/workspace/project/outputs/stage2_adaptive_runs_user_devpick/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_typeonlylite_full_free_dev_seen_max512/selection_summary.json",
+      "evals": [
+        {
+          "name": "test",
+          "eval_jsonl": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_typeonlylite_forced_reason_test_pos.jsonl",
+          "output_dir": "/workspace/project/outputs/stage2_adaptive_runs_user_formal/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_typeonlylite/forced_reason/test"
+        },
+        {
+          "name": "test_seen",
+          "eval_jsonl": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_typeonlylite_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "/workspace/project/outputs/stage2_adaptive_runs_user_formal/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_typeonlylite/forced_reason/test_seen"
+        },
+        {
+          "name": "test_unseen",
+          "eval_jsonl": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_confrare10_heur10_typeonlylite_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "/workspace/project/outputs/stage2_adaptive_runs_user_formal/richere_split1_qwen3_1_7b_adaptive_confrare10_heur10_typeonlylite/forced_reason/test_unseen"
+        }
+      ]
+    }
+  ]
+}

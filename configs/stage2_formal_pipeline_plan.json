@@ -1,0 +1,83 @@
+{
+  "dataset_dir": "data/stage2_formal_datasets",
+  "jobs": [
+    {
+      "dataset_name": "richere_balanced_split1_predicted_top5_train_pos",
+      "dataset": "richere-en",
+      "protocol": "balanced-subtype-v1",
+      "split": "split1",
+      "part": "train",
+      "schema_path": "data/schema/richere-en.event_schema.json",
+      "candidate_source": "predicted",
+      "top_k": 5,
+      "prediction_tag": "qwen8b_main",
+      "prediction_model": "Qwen/Qwen3-Reranker-8B",
+      "selection_mode": "positive_only"
+    },
+    {
+      "dataset_name": "richere_balanced_split1_predicted_top5_dev_seen_pos",
+      "dataset": "richere-en",
+      "protocol": "balanced-subtype-v1",
+      "split": "split1",
+      "part": "dev_seen",
+      "schema_path": "data/schema/richere-en.event_schema.json",
+      "candidate_source": "predicted",
+      "top_k": 5,
+      "prediction_tag": "qwen8b_main",
+      "prediction_model": "Qwen/Qwen3-Reranker-8B",
+      "selection_mode": "positive_only"
+    },
+    {
+      "dataset_name": "richere_balanced_split1_predicted_top5_test_pos",
+      "dataset": "richere-en",
+      "protocol": "balanced-subtype-v1",
+      "split": "split1",
+      "part": "test",
+      "schema_path": "data/schema/richere-en.event_schema.json",
+      "candidate_source": "predicted",
+      "top_k": 5,
+      "prediction_tag": "qwen8b_main",
+      "prediction_model": "Qwen/Qwen3-Reranker-8B",
+      "selection_mode": "positive_only"
+    },
+    {
+      "dataset_name": "ace05_balanced_split1_predicted_top5_train_pos",
+      "dataset": "ace05-en",
+      "protocol": "balanced-subtype-v1",
+      "split": "split1",
+      "part": "train",
+      "schema_path": "data/schema/ace05-en.event_schema.json",
+      "candidate_source": "predicted",
+      "top_k": 5,
+      "prediction_tag": "qwen8b_main",
+      "prediction_model": "Qwen/Qwen3-Reranker-8B",
+      "selection_mode": "positive_only"
+    },
+    {
+      "dataset_name": "ace05_balanced_split1_predicted_top5_dev_seen_pos",
+      "dataset": "ace05-en",
+      "protocol": "balanced-subtype-v1",
+      "split": "split1",
+      "part": "dev_seen",
+      "schema_path": "data/schema/ace05-en.event_schema.json",
+      "candidate_source": "predicted",
+      "top_k": 5,
+      "prediction_tag": "qwen8b_main",
+      "prediction_model": "Qwen/Qwen3-Reranker-8B",
+      "selection_mode": "positive_only"
+    },
+    {
+      "dataset_name": "ace05_balanced_split1_predicted_top5_test_pos",
+      "dataset": "ace05-en",
+      "protocol": "balanced-subtype-v1",
+      "split": "split1",
+      "part": "test",
+      "schema_path": "data/schema/ace05-en.event_schema.json",
+      "candidate_source": "predicted",
+      "top_k": 5,
+      "prediction_tag": "qwen8b_main",
+      "prediction_model": "Qwen/Qwen3-Reranker-8B",
+      "selection_mode": "positive_only"
+    }
+  ]
+}

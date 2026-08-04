@@ -1,0 +1,24 @@
+{
+  "id": "sampledk2_seedpair_robustness_checkpoint258_20260518",
+  "kind": "analysis_config",
+  "created_at": "2026-05-18T12:23:04+08:00",
+  "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+  "sample_root": "outputs/stage2_modular_dualexpert/sampled_counterfactual_utility_20260517/sampled_reason_expert_forcedreason_from_noaux_20260517_checkpoint-258",
+  "seed_pairs": [
+    [17, 18],
+    [19, 20],
+    [21, 22],
+    [23, 24]
+  ],
+  "splits": ["train", "dev_seen"],
+  "analysis": [
+    "mine confident-only route labels from each K=2 seed pair with the same K=8 thresholds",
+    "evaluate K=2 pair-mined labels against K=8 stable_reason labels and K=8 mean routed-minus-direct metrics",
+    "evaluate train-selected hand-written output-consistency selectors on each seed pair",
+    "evaluate train-selected lightweight linear output-consistency selectors on each seed pair"
+  ],
+  "outputs": {
+    "output_dir": "outputs/stage2_analysis/sampledk2_seedpair_robustness_20260518",
+    "report": "reports/2026-05-18_stage2_sampled_k2_seedpair_robustness_checkpoint258.md"
+  }
+}

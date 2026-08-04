@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+outputs/
+data/raw/
+data/processed/
+*.jsonl
+!data/stage2_benchmark_datasets/dataset_info.json

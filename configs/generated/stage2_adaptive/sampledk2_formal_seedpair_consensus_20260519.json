@@ -1,0 +1,66 @@
+{
+  "id": "sampledk2_formal_seedpair_consensus_20260519",
+  "kind": "offline_analysis_config",
+  "created_at": "2026-05-19T00:53:02+08:00",
+  "updated_at": "2026-05-19T00:53:02+08:00",
+  "objective": "Evaluate whether combining formal K2 route-NLL margins from seedpairs 17/18 and 19/20 improves route stability and reduces unseen false-positive Reason selections.",
+  "branch": "sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+  "splits": [
+    "test_seen",
+    "test_unseen"
+  ],
+  "sample_root": "outputs/stage2_modular_dualexpert/formal_k2_counterfactual_utility_20260518/sampled_reason_expert_forcedreason_from_noaux_20260517_checkpoint-258",
+  "route_nll_roots": {
+    "seedpair17_18": "outputs/stage2_adaptive_route_formal_nll_20260518/sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+    "seedpair19_20": "outputs/stage2_adaptive_route_formal_nll_seedpair19_20_20260518/sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25"
+  },
+  "execution_root": "outputs/stage2_adaptive_route_formal_execution_20260518/sampledk2_ckpt50_margin025",
+  "output_root": "outputs/stage2_adaptive_route_formal_consensus_20260519/sampledk2_seedpair_consensus",
+  "reports": {
+    "markdown": "reports/2026-05-19_stage2_sampled_k2_formal_seedpair_consensus.md",
+    "json": "reports/artifacts/2026-05-19_stage2_sampled_k2_formal_seedpair_consensus.json"
+  },
+  "evaluation_sources": {
+    "k2_expected_17_18": [
+      17,
+      18
+    ],
+    "k2_expected_19_20": [
+      19,
+      20
+    ],
+    "k2_expected_17_20": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "single_gen_execution": "reused deterministic forced-direct/forced-reason outputs"
+  },
+  "policies": [
+    {
+      "id": "old17_18_main",
+      "description": "Route Reason when seedpair17_18 checkpoint-50 margin >= 0.25."
+    },
+    {
+      "id": "new19_20_main",
+      "description": "Route Reason when seedpair19_20 checkpoint-50 margin >= 0.25."
+    },
+    {
+      "id": "both_seedpairs_main",
+      "description": "Route Reason only when both seedpairs have checkpoint-50 margin >= 0.25."
+    },
+    {
+      "id": "avg_margin_main",
+      "description": "Route Reason when the mean checkpoint-50 margin across both seedpairs is >= 0.25."
+    },
+    {
+      "id": "avg_margin_both_positive",
+      "description": "Route Reason when the mean checkpoint-50 margin is >= 0.25 and both seedpair margins are positive."
+    },
+    {
+      "id": "either_seedpair_main",
+      "description": "Diagnostic high-recall policy: route Reason when either seedpair has checkpoint-50 margin >= 0.25."
+    }
+  ]
+}

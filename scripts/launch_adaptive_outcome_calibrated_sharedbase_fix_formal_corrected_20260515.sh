@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+IMAGE="llamafactory-lab:0.9.4-py3.12"
+PROJECT_ROOT="/mnt/disk/gaojun/research/progressive-ee"
+LF_ROOT="/mnt/disk/gaojun/research/llamafactory-lab"
+MODEL_ROOT="/mnt/disk/gaojun/models"
+CONTAINER_NAME="richere_qwen3_adaptive_outcome_calibrated_sharedbase_fix_formal_corrected_20260515"
+MANIFEST="configs/generated/stage2_adaptive/richere_qwen3_1_7b_adaptive_outcome_calibrated_sharedbase_fix_formal_manifest_corrected_20260515.json"
+STATUS="outputs/stage2_adaptive_runs_user_formal_corrected/richere_qwen3_1_7b_adaptive_outcome_calibrated_sharedbase_fix_formal_corrected_status.json"
+LOG="outputs/stage2_adaptive_runs_user_logs/richere_qwen3_1_7b_adaptive_outcome_calibrated_sharedbase_fix_formal_corrected_20260515.log"
+
+if docker ps -a --format '{{.Names}}' | grep -Fxq "${CONTAINER_NAME}"; then
+  echo "container already exists: ${CONTAINER_NAME}" >&2
+  exit 1
+fi
+
+docker run -d \
+  --name "${CONTAINER_NAME}" \
+  --user root \
+  --gpus '"device=0,1,2,3"' \
+  --ipc host \
+  --shm-size 16g \
+  -v "${PROJECT_ROOT}:/workspace/project" \
+  -v "${MODEL_ROOT}:/workspace/models" \
+  -v "${LF_ROOT}/cache/huggingface:/workspace/.cache/huggingface" \
+  -v "${LF_ROOT}/cache/torch_extensions:/workspace/.cache/torch_extensions" \
+  -v "${LF_ROOT}/logs:/workspace/logs" \
+  -e PYTHONUNBUFFERED=1 \
+  -e HF_HOME=/workspace/.cache/huggingface \
+  -e HUGGINGFACE_HUB_CACHE=/workspace/.cache/huggingface/hub \
+  -e HF_DATASETS_CACHE=/workspace/.cache/huggingface/datasets \
+  -e TRANSFORMERS_CACHE=/workspace/.cache/huggingface/transformers \
+  -e TORCH_EXTENSIONS_DIR=/workspace/.cache/torch_extensions \
+  -e WANDB_DIR=/workspace/logs/wandb \
+  -w /workspace/project \
+  "${IMAGE}" \
+  bash -lc "
+    set -euo pipefail
+    mkdir -p outputs/stage2_adaptive_runs_user_logs outputs/stage2_adaptive_runs_user_formal_corrected
+    python src/stage2_formal/orchestrate_best_eval_from_selection.py \
+      --manifest_json ${MANIFEST} \
+      --gpu_ids 0 1 2 3 \
+      --batch_size 2 \
+      --max_new_tokens 512 \
+      --temperature 0.0 \
+      --eval_script src/stage2_quality_validation/eval_adaptive_route_generation.py \
+      --log_path ${LOG} \
+      --status_json ${STATUS}
+    python scripts/summarize_adaptive_outcome_calibrated_sharedbase_fix_formal_20260514.py \
+      --manifest ${MANIFEST} \
+      --output_json reports/artifacts/2026-05-15_stage2_adaptive_outcome_calibrated_sharedbase_fix_formal_corrected_summary.json \
+      --output_md reports/2026-05-15_stage2_adaptive_outcome_calibrated_sharedbase_fix_formal_corrected_summary.md
+    HOST_UGID=\$(stat -c '%u:%g' /workspace/project)
+    chown -R \${HOST_UGID} outputs/stage2_adaptive_runs_user_formal_corrected outputs/stage2_adaptive_runs_user_logs reports configs/generated/stage2_adaptive
+  "

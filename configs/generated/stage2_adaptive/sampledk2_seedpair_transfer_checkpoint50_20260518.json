@@ -1,0 +1,161 @@
+{
+  "id": "sampled_k2_seedpair_transfer_ckpt50_20260518",
+  "kind": "analysis_config",
+  "created_at": "2026-05-18T12:33:11+08:00",
+  "updated_at": "2026-05-18T12:33:11+08:00",
+  "trained_branch": "sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+  "checkpoint": "checkpoint-50",
+  "adapter_path": "outputs/stage2_adaptive_runs_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_full/checkpoint-50",
+  "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+  "split": "dev_seen",
+  "seed_pairs": [
+    {
+      "name": "17_18",
+      "seeds": [
+        17,
+        18
+      ],
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair17_18_dev_seen_pos"
+    },
+    {
+      "name": "19_20",
+      "seeds": [
+        19,
+        20
+      ],
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair19_20_dev_seen_pos"
+    },
+    {
+      "name": "21_22",
+      "seeds": [
+        21,
+        22
+      ],
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair21_22_dev_seen_pos"
+    },
+    {
+      "name": "23_24",
+      "seeds": [
+        23,
+        24
+      ],
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair23_24_dev_seen_pos"
+    }
+  ],
+  "datasets": {
+    "17_18": {
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair17_18_dev_seen_pos",
+      "file_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair17_18_dev_seen_pos.jsonl",
+      "split": "dev_seen",
+      "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+      "source_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_dev_seen_pos.jsonl",
+      "label_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.jsonl",
+      "trained_branch": "sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+      "checkpoint": "checkpoint-50",
+      "audit": {
+        "seed_pair": "17_18",
+        "seeds": [
+          17,
+          18
+        ],
+        "source_count": 197,
+        "confident_label_count": 177,
+        "skipped_ambiguous_or_missing_count": 20,
+        "total_count": 177,
+        "route_only_count": 177,
+        "route_only_classifier_prompt_count": 177,
+        "route_only_rows_with_final": 0,
+        "direct_count": 162,
+        "reason_count": 15,
+        "reason_rate": 0.0847457627118644,
+        "sampled_evidence_samples_per_route": 2
+      }
+    },
+    "19_20": {
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair19_20_dev_seen_pos",
+      "file_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair19_20_dev_seen_pos.jsonl",
+      "split": "dev_seen",
+      "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+      "source_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_dev_seen_pos.jsonl",
+      "label_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.jsonl",
+      "trained_branch": "sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+      "checkpoint": "checkpoint-50",
+      "audit": {
+        "seed_pair": "19_20",
+        "seeds": [
+          19,
+          20
+        ],
+        "source_count": 197,
+        "confident_label_count": 177,
+        "skipped_ambiguous_or_missing_count": 20,
+        "total_count": 177,
+        "route_only_count": 177,
+        "route_only_classifier_prompt_count": 177,
+        "route_only_rows_with_final": 0,
+        "direct_count": 162,
+        "reason_count": 15,
+        "reason_rate": 0.0847457627118644,
+        "sampled_evidence_samples_per_route": 2
+      }
+    },
+    "21_22": {
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair21_22_dev_seen_pos",
+      "file_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair21_22_dev_seen_pos.jsonl",
+      "split": "dev_seen",
+      "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+      "source_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_dev_seen_pos.jsonl",
+      "label_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.jsonl",
+      "trained_branch": "sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+      "checkpoint": "checkpoint-50",
+      "audit": {
+        "seed_pair": "21_22",
+        "seeds": [
+          21,
+          22
+        ],
+        "source_count": 197,
+        "confident_label_count": 177,
+        "skipped_ambiguous_or_missing_count": 20,
+        "total_count": 177,
+        "route_only_count": 177,
+        "route_only_classifier_prompt_count": 177,
+        "route_only_rows_with_final": 0,
+        "direct_count": 162,
+        "reason_count": 15,
+        "reason_rate": 0.0847457627118644,
+        "sampled_evidence_samples_per_route": 2
+      }
+    },
+    "23_24": {
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair23_24_dev_seen_pos",
+      "file_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_seedpair_transfer_ckpt50_20260518_seedpair23_24_dev_seen_pos.jsonl",
+      "split": "dev_seen",
+      "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+      "source_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_dev_seen_pos.jsonl",
+      "label_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.jsonl",
+      "trained_branch": "sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+      "checkpoint": "checkpoint-50",
+      "audit": {
+        "seed_pair": "23_24",
+        "seeds": [
+          23,
+          24
+        ],
+        "source_count": 197,
+        "confident_label_count": 177,
+        "skipped_ambiguous_or_missing_count": 20,
+        "total_count": 177,
+        "route_only_count": 177,
+        "route_only_classifier_prompt_count": 177,
+        "route_only_rows_with_final": 0,
+        "direct_count": 162,
+        "reason_count": 15,
+        "reason_rate": 0.0847457627118644,
+        "sampled_evidence_samples_per_route": 2
+      }
+    }
+  },
+  "output_root": "/mnt/disk/gaojun/research/progressive-ee/outputs/stage2_adaptive_route_seedpair_transfer_20260518",
+  "report": "/mnt/disk/gaojun/research/progressive-ee/reports/2026-05-18_stage2_sampled_k2_seedpair_transfer_router_checkpoint50.md"
+}

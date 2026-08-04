@@ -1,0 +1,20 @@
+{
+  "dataset_name": "ace05_balanced_split1_predicted_top10_train_pos",
+  "file_name": "ace05_balanced_split1_predicted_top10_train_pos.jsonl",
+  "num_examples": 2690,
+  "data_root": "data/processed/type_holdout",
+  "dataset": "ace05-en",
+  "protocol": "balanced-subtype-v1",
+  "split": "split1",
+  "part": "train",
+  "schema_path": "data/schema/ace05-en.event_schema.json",
+  "candidate_source": "predicted",
+  "top_k": 10,
+  "prediction_tag": "qwen8b_main",
+  "prediction_model": "Qwen/Qwen3-Reranker-8B",
+  "prediction_part": "train",
+  "selection_mode": "positive_only",
+  "negative_ratio": null,
+  "seed": 13,
+  "max_examples": null
+}

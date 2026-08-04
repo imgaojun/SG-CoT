@@ -1,0 +1,33 @@
+{
+  "id": "E115A",
+  "protocol": "training-only corrected smoke and representation diagnostic",
+  "source_preference": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_e114a_e81_atomic_counterfactual_orpo_seed1140.jsonl",
+  "source_preference_sha256": "0b919c65b4e6f9484b6b20506508e5d4de831c10b162e980d60b8097f77ff8b4",
+  "source_samples_glob": "/workspace/project/outputs/stage2_preference_mining/e110a_e81_k4_seed1104/samples.shard-*.jsonl",
+  "selection_seed": 1150,
+  "smoke": {
+    "pairs_per_category": 8,
+    "total_pairs": 40,
+    "document_constraint": "globally unique",
+    "selection": "stable hash; independent of margins"
+  },
+  "style_diagnostic": {
+    "pairs_per_category": 40,
+    "total_pairs": 200,
+    "document_constraint": "unique within category",
+    "responses": [
+      "E114 canonical chosen",
+      "E114 eligibility self-exact native response"
+    ]
+  },
+  "gate": {
+    "overall_mean_margin_delta_gt": 0.0,
+    "minimum_improved_categories": 4,
+    "required_improved_categories": [
+      "extra_frame",
+      "trigger_drift"
+    ],
+    "maximum_canonical_minus_native_nll": 0.3
+  },
+  "test_data_access": false
+}

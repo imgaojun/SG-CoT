@@ -1,0 +1,28 @@
+{
+  "task": "candidate_type_recall",
+  "backend": "siliconflow_rerank",
+  "dataset": "richere-en",
+  "protocol": "balanced-subtype-v1",
+  "split": "split1",
+  "parts": [
+    "dev_seen",
+    "test"
+  ],
+  "schema_path": "data/schema/richere-en.event_schema.json",
+  "models": [
+    "Qwen/Qwen3-Reranker-4B",
+    "Qwen/Qwen3-Reranker-8B",
+    "BAAI/bge-reranker-v2-m3"
+  ],
+  "top_k": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "num_workers": 4,
+  "outputs": {
+    "dev_seen": "outputs/candidate_type_recall_runs/richere_en_balanced_subtype_v1_split1_dev_seen_full",
+    "test": "outputs/candidate_type_recall_runs/richere_en_balanced_subtype_v1_split1_test_full"
+  }
+}

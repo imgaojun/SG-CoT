@@ -1,0 +1,19 @@
+{
+  "dataset_name": "richere_balanced_split1_predicted_top5_dev_seen_pos",
+  "file_name": "richere_balanced_split1_predicted_top5_dev_seen_pos.jsonl",
+  "num_examples": 197,
+  "data_root": "data/processed/type_holdout",
+  "dataset": "richere-en",
+  "protocol": "balanced-subtype-v1",
+  "split": "split1",
+  "part": "dev_seen",
+  "schema_path": "data/schema/richere-en.event_schema.json",
+  "candidate_source": "predicted",
+  "top_k": 5,
+  "prediction_tag": "qwen8b_main",
+  "prediction_model": "Qwen/Qwen3-Reranker-8B",
+  "selection_mode": "positive_only",
+  "negative_ratio": null,
+  "seed": 13,
+  "max_examples": null
+}

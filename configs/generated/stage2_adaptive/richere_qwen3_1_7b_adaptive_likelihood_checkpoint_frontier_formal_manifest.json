@@ -1,0 +1,2045 @@
+{
+  "base_model": "/workspace/models/LLM-Research/Qwen3-1.7B",
+  "runs": [
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_raw__free_arg_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_raw__free_arg_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_raw__reason_expert_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_raw__reason_expert_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_raw__adaptive_pareto",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_raw__adaptive_pareto/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_raw__direct_anchor_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_raw__direct_anchor_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_raw__adaptive_tradeoff_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_raw__adaptive_tradeoff_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_raw__seen_stable_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_raw__seen_stable_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_raw__hard_reason_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_raw__hard_reason_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_raw__balanced_hardroute_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_raw__balanced_hardroute_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_bal30__free_arg_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_bal30__free_arg_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_bal30__reason_expert_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_bal30__reason_expert_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_bal30__adaptive_pareto",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_bal30__adaptive_pareto/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_bal30__direct_anchor_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_bal30__direct_anchor_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_bal30__adaptive_tradeoff_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_bal30__adaptive_tradeoff_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_bal30__seen_stable_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_bal30__seen_stable_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_bal30__hard_reason_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_bal30__hard_reason_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_bal30__balanced_hardroute_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_bal30__balanced_hardroute_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_raw__free_arg_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_raw__free_arg_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_free_arg_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_raw__reason_expert_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_raw__reason_expert_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_reason_expert_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_raw__adaptive_pareto",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_raw__adaptive_pareto/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_pareto/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_raw__direct_anchor_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_raw__direct_anchor_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_direct_anchor_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_raw__adaptive_tradeoff_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_raw__adaptive_tradeoff_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_adaptive_tradeoff_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_raw__seen_stable_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_raw__seen_stable_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_seen_stable_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_raw__hard_reason_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_raw__hard_reason_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_hard_reason_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_raw__balanced_hardroute_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_raw__balanced_hardroute_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_raw/frontier_balanced_hardroute_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_bal30__free_arg_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_bal30__free_arg_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_free_arg_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_bal30__reason_expert_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_bal30__reason_expert_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_reason_expert_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_bal30__adaptive_pareto",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_bal30__adaptive_pareto/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_pareto/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_bal30__direct_anchor_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_bal30__direct_anchor_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_direct_anchor_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_bal30__adaptive_tradeoff_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_bal30__adaptive_tradeoff_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_adaptive_tradeoff_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_bal30__seen_stable_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_bal30__seen_stable_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_seen_stable_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_bal30__hard_reason_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_bal30__hard_reason_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_hard_reason_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood15_goldplan_type_role_hint_plan_lite_bal30__balanced_hardroute_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood15_goldplan_type_role_hint_plan_lite_bal30__balanced_hardroute_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood15_goldplan_type_role_hint_plan_lite_bal30/frontier_balanced_hardroute_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__free_arg_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__free_arg_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_free_arg_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_free_arg_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_free_arg_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_free_arg_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_free_arg_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_free_arg_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_free_arg_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_free_arg_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_free_arg_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__reason_expert_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__reason_expert_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_reason_expert_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_reason_expert_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_reason_expert_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_reason_expert_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_reason_expert_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_reason_expert_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_reason_expert_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_reason_expert_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_reason_expert_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__adaptive_pareto",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__adaptive_pareto/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_pareto/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_pareto/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_pareto/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_pareto/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_pareto/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_pareto/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_pareto/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_pareto/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_pareto/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__direct_anchor_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__direct_anchor_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_direct_anchor_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_direct_anchor_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_direct_anchor_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_direct_anchor_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_direct_anchor_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_direct_anchor_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_direct_anchor_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_direct_anchor_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_direct_anchor_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__adaptive_tradeoff_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__adaptive_tradeoff_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_tradeoff_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_tradeoff_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_tradeoff_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_tradeoff_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_tradeoff_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_tradeoff_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_tradeoff_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_tradeoff_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_adaptive_tradeoff_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__seen_stable_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__seen_stable_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_seen_stable_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_seen_stable_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_seen_stable_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_seen_stable_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_seen_stable_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_seen_stable_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_seen_stable_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_seen_stable_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_seen_stable_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__hard_reason_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__hard_reason_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_hard_reason_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_hard_reason_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_hard_reason_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_hard_reason_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_hard_reason_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_hard_reason_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_hard_reason_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_hard_reason_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_hard_reason_best/forced_reason/test_unseen"
+        }
+      ]
+    },
+    {
+      "tag": "likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__balanced_hardroute_best",
+      "selection_summary": "outputs/stage2_adaptive_runs_user_devpick_frontier/protocol_selections/likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30__balanced_hardroute_best/selection_summary.json",
+      "evals": [
+        {
+          "name": "free_route/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_balanced_hardroute_best/free_route/test"
+        },
+        {
+          "name": "free_route/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_balanced_hardroute_best/free_route/test_seen"
+        },
+        {
+          "name": "free_route/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_balanced_hardroute_best/free_route/test_unseen"
+        },
+        {
+          "name": "forced_direct/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_balanced_hardroute_best/forced_direct/test"
+        },
+        {
+          "name": "forced_direct/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_balanced_hardroute_best/forced_direct/test_seen"
+        },
+        {
+          "name": "forced_direct/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_direct_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_balanced_hardroute_best/forced_direct/test_unseen"
+        },
+        {
+          "name": "forced_reason/test",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_balanced_hardroute_best/forced_reason/test"
+        },
+        {
+          "name": "forced_reason/test_seen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_balanced_hardroute_best/forced_reason/test_seen"
+        },
+        {
+          "name": "forced_reason/test_unseen",
+          "eval_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30_forced_reason_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_adaptive_runs_user_formal_clean/richere_split1_qwen3_1_7b_adaptive_likelihood10_goldplan_type_role_hint_plan_lite_pairdirect_bal30/frontier_balanced_hardroute_best/forced_reason/test_unseen"
+        }
+      ]
+    }
+  ]
+}

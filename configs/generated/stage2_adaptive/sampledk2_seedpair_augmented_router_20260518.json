@@ -1,0 +1,303 @@
+{
+  "id": "sampledk2_seedpair_augmented_router_20260518",
+  "kind": "analysis_config",
+  "created_at": "2026-05-18T12:53:35+08:00",
+  "branch": "sampled_k2pairaug_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+  "transfer_dataset_id": "sampled_k2pairaug_transfer_20260518",
+  "config": "/mnt/disk/gaojun/research/progressive-ee/configs/generated/stage2_adaptive/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_full_stepmatch.yaml",
+  "output_dir": "/mnt/disk/gaojun/research/progressive-ee/outputs/stage2_adaptive_runs_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_full",
+  "train_meta": {
+    "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_train_pos",
+    "file_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_train_pos.jsonl",
+    "split": "train",
+    "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+    "source_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_train_pos.jsonl",
+    "label_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_train_labels.jsonl",
+    "label_summary_json": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_train_labels.summary.json",
+    "seed_pairs": [
+      {
+        "name": "17_18",
+        "seeds": [
+          17,
+          18
+        ]
+      },
+      {
+        "name": "19_20",
+        "seeds": [
+          19,
+          20
+        ]
+      },
+      {
+        "name": "21_22",
+        "seeds": [
+          21,
+          22
+        ]
+      },
+      {
+        "name": "23_24",
+        "seeds": [
+          23,
+          24
+        ]
+      }
+    ],
+    "negative_strategy": "hard_direct_balanced_seedpair_augmented",
+    "excluded_utility_labels": [
+      "ambiguous"
+    ],
+    "audit": {
+      "source_count": 2056,
+      "confident_label_count": 1919,
+      "skipped_ambiguous_or_missing_count": 137,
+      "total_count": 2816,
+      "route_only_count": 2816,
+      "route_only_classifier_prompt_count": 2816,
+      "route_only_full_extraction_prompt_count": 0,
+      "route_only_rows_with_final": 0,
+      "route_only_direct_rows": 1408,
+      "route_only_reason_rows": 1408,
+      "direct_count": 1408,
+      "reason_count": 1408,
+      "reason_rate": 0.5,
+      "sampled_evidence_samples_per_route": 2,
+      "seed_pair_row_counts": {
+        "23_24": 704,
+        "19_20": 704,
+        "17_18": 704,
+        "21_22": 704
+      },
+      "positive_unique_count": 88,
+      "stable_direct_count": 1831,
+      "hard_pool_count": 360,
+      "selected_negative_unique_count": 352,
+      "target_negative_unique_count": 352,
+      "positive_repeat_per_pair": 4,
+      "negative_unique_multiplier": 4
+    }
+  },
+  "dev_pair_metas": {
+    "17_18": {
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_transfer_20260518_seedpair17_18_dev_seen_pos",
+      "file_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_transfer_20260518_seedpair17_18_dev_seen_pos.jsonl",
+      "split": "dev_seen",
+      "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+      "source_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_dev_seen_pos.jsonl",
+      "label_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.jsonl",
+      "label_summary_json": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.summary.json",
+      "seed_pair": "17_18",
+      "seeds": [
+        17,
+        18
+      ],
+      "excluded_utility_labels": [
+        "ambiguous"
+      ],
+      "audit": {
+        "source_count": 197,
+        "confident_label_count": 177,
+        "skipped_ambiguous_or_missing_count": 20,
+        "total_count": 177,
+        "route_only_count": 177,
+        "route_only_classifier_prompt_count": 177,
+        "route_only_full_extraction_prompt_count": 0,
+        "route_only_rows_with_final": 0,
+        "route_only_direct_rows": 162,
+        "route_only_reason_rows": 15,
+        "direct_count": 162,
+        "reason_count": 15,
+        "reason_rate": 0.0847457627118644,
+        "sampled_evidence_samples_per_route": 2,
+        "seed_pair_row_counts": {
+          "17_18": 177
+        },
+        "positive_unique_count": 15,
+        "stable_direct_count": 162,
+        "hard_pool_count": null,
+        "selected_negative_unique_count": 162,
+        "target_negative_unique_count": null,
+        "positive_repeat_per_pair": 1,
+        "negative_unique_multiplier": null
+      }
+    },
+    "19_20": {
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_transfer_20260518_seedpair19_20_dev_seen_pos",
+      "file_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_transfer_20260518_seedpair19_20_dev_seen_pos.jsonl",
+      "split": "dev_seen",
+      "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+      "source_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_dev_seen_pos.jsonl",
+      "label_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.jsonl",
+      "label_summary_json": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.summary.json",
+      "seed_pair": "19_20",
+      "seeds": [
+        19,
+        20
+      ],
+      "excluded_utility_labels": [
+        "ambiguous"
+      ],
+      "audit": {
+        "source_count": 197,
+        "confident_label_count": 177,
+        "skipped_ambiguous_or_missing_count": 20,
+        "total_count": 177,
+        "route_only_count": 177,
+        "route_only_classifier_prompt_count": 177,
+        "route_only_full_extraction_prompt_count": 0,
+        "route_only_rows_with_final": 0,
+        "route_only_direct_rows": 162,
+        "route_only_reason_rows": 15,
+        "direct_count": 162,
+        "reason_count": 15,
+        "reason_rate": 0.0847457627118644,
+        "sampled_evidence_samples_per_route": 2,
+        "seed_pair_row_counts": {
+          "19_20": 177
+        },
+        "positive_unique_count": 15,
+        "stable_direct_count": 162,
+        "hard_pool_count": null,
+        "selected_negative_unique_count": 162,
+        "target_negative_unique_count": null,
+        "positive_repeat_per_pair": 1,
+        "negative_unique_multiplier": null
+      }
+    },
+    "21_22": {
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_transfer_20260518_seedpair21_22_dev_seen_pos",
+      "file_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_transfer_20260518_seedpair21_22_dev_seen_pos.jsonl",
+      "split": "dev_seen",
+      "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+      "source_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_dev_seen_pos.jsonl",
+      "label_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.jsonl",
+      "label_summary_json": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.summary.json",
+      "seed_pair": "21_22",
+      "seeds": [
+        21,
+        22
+      ],
+      "excluded_utility_labels": [
+        "ambiguous"
+      ],
+      "audit": {
+        "source_count": 197,
+        "confident_label_count": 177,
+        "skipped_ambiguous_or_missing_count": 20,
+        "total_count": 177,
+        "route_only_count": 177,
+        "route_only_classifier_prompt_count": 177,
+        "route_only_full_extraction_prompt_count": 0,
+        "route_only_rows_with_final": 0,
+        "route_only_direct_rows": 162,
+        "route_only_reason_rows": 15,
+        "direct_count": 162,
+        "reason_count": 15,
+        "reason_rate": 0.0847457627118644,
+        "sampled_evidence_samples_per_route": 2,
+        "seed_pair_row_counts": {
+          "21_22": 177
+        },
+        "positive_unique_count": 15,
+        "stable_direct_count": 162,
+        "hard_pool_count": null,
+        "selected_negative_unique_count": 162,
+        "target_negative_unique_count": null,
+        "positive_repeat_per_pair": 1,
+        "negative_unique_multiplier": null
+      }
+    },
+    "23_24": {
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_transfer_20260518_seedpair23_24_dev_seen_pos",
+      "file_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_transfer_20260518_seedpair23_24_dev_seen_pos.jsonl",
+      "split": "dev_seen",
+      "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+      "source_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_dev_seen_pos.jsonl",
+      "label_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.jsonl",
+      "label_summary_json": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_adaptive_datasets/labels/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_counterfactual_utility_k8_checkpoint-258_dev_seen_labels.summary.json",
+      "seed_pair": "23_24",
+      "seeds": [
+        23,
+        24
+      ],
+      "excluded_utility_labels": [
+        "ambiguous"
+      ],
+      "audit": {
+        "source_count": 197,
+        "confident_label_count": 177,
+        "skipped_ambiguous_or_missing_count": 20,
+        "total_count": 177,
+        "route_only_count": 177,
+        "route_only_classifier_prompt_count": 177,
+        "route_only_full_extraction_prompt_count": 0,
+        "route_only_rows_with_final": 0,
+        "route_only_direct_rows": 162,
+        "route_only_reason_rows": 15,
+        "direct_count": 162,
+        "reason_count": 15,
+        "reason_rate": 0.0847457627118644,
+        "sampled_evidence_samples_per_route": 2,
+        "seed_pair_row_counts": {
+          "23_24": 177
+        },
+        "positive_unique_count": 15,
+        "stable_direct_count": 162,
+        "hard_pool_count": null,
+        "selected_negative_unique_count": 162,
+        "target_negative_unique_count": null,
+        "positive_repeat_per_pair": 1,
+        "negative_unique_multiplier": null
+      }
+    }
+  },
+  "dev_aggregate_meta": {
+    "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_dev_seen_seedpairs_pos",
+    "file_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2pairaug_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_dev_seen_seedpairs_pos.jsonl",
+    "split": "dev_seen_seedpairs",
+    "label_source": "sampled_counterfactual_utility_k8_checkpoint-258",
+    "seed_pairs": [
+      {
+        "name": "17_18",
+        "seeds": [
+          17,
+          18
+        ]
+      },
+      {
+        "name": "19_20",
+        "seeds": [
+          19,
+          20
+        ]
+      },
+      {
+        "name": "21_22",
+        "seeds": [
+          21,
+          22
+        ]
+      },
+      {
+        "name": "23_24",
+        "seeds": [
+          23,
+          24
+        ]
+      }
+    ],
+    "audit": {
+      "total_count": 708,
+      "route_only_count": 708,
+      "direct_count": 648,
+      "reason_count": 60,
+      "seed_pair_row_counts": {
+        "17_18": 177,
+        "19_20": 177,
+        "21_22": 177,
+        "23_24": 177
+      }
+    }
+  }
+}

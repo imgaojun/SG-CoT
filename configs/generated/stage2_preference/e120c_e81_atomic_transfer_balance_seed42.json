@@ -1,0 +1,20 @@
+{
+  "experiment_id": "e120c_e81_atomic_transfer_balance_seed42",
+  "categories": [
+    "argument_omission",
+    "event_omission",
+    "extra_frame",
+    "trigger_drift",
+    "wrong_type"
+  ],
+  "objective": "maximize the minimum masked category margin delta",
+  "constraints": {
+    "weights_nonnegative": true,
+    "weights_sum": 1.0,
+    "predicted_full_response_category_delta_min": 0.0
+  },
+  "composition_scale": 5.0,
+  "solver": "scipy.optimize.linprog(method=highs)",
+  "output_dir": "/workspace/project/outputs/stage2_preference_mining/e120c_e81_atomic_transfer_balance_seed42",
+  "test_data_access": false
+}

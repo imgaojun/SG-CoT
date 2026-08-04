@@ -1,0 +1,61 @@
+{
+  "id": "e128e_strict_confirmation_eval_v1",
+  "protocol": "balanced-subtype-v2-confirmation",
+  "methods": [
+    "direct",
+    "sgcot"
+  ],
+  "seeds": [
+    42,
+    8322,
+    8333
+  ],
+  "splits": [
+    "test_seen",
+    "test_unseen",
+    "pooled_unseen"
+  ],
+  "expected_examples": {
+    "test_seen": 386,
+    "test_unseen": 63,
+    "pooled_unseen": 272
+  },
+  "expected_pooled_unique_wnd_ids": 272,
+  "expected_pooled_gold_events": 317,
+  "expected_heldout_types": 6,
+  "decode": {
+    "batch_size": 4,
+    "temperature": 0.0,
+    "max_new_tokens": 1024
+  },
+  "surface_protocol": "shortest_unique_evidence_v1",
+  "scorers": [
+    "window_macro",
+    "corpus_micro_exact_tuple"
+  ],
+  "completion_diagnostics": [
+    "generated_token_count",
+    "generation_ended_with_eos",
+    "hit_max_new_tokens"
+  ],
+  "output_contract_diagnostics": [
+    "final_tag_complete",
+    "reasoning_tag_complete",
+    "surface_event_list_valid",
+    "candidate_types_valid"
+  ],
+  "bootstrap": {
+    "unit": "wnd_id",
+    "paired_by_seed": true,
+    "samples": 10000,
+    "seed": 20260712
+  },
+  "gate_config": "configs/generated/stage2_confirmation/e121e_confirmation_gate.json",
+  "freeze_required": true,
+  "test_access_requires": {
+    "smoke_passed": true,
+    "freeze_verified": true,
+    "direct_seeds_completed": 3,
+    "sgcot_seeds_completed": 3
+  }
+}

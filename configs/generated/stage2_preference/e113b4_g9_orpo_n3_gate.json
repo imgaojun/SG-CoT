@@ -1,0 +1,9 @@
+{
+  "id": "e113b4_g9_orpo_n3_gate",
+  "seeds": [42, 8322, 8333],
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 20260712,
+  "maximum_gollie_seen_event_gap": 0.02,
+  "allow_paired_event_ci_to_intersect_zero": true,
+  "output_dir": "outputs/stage2_preference_eval/e113_g9_orpo_n3_gate"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "e123a_glm51_verifierhigh4096_smoke40",
+  "protocol": "e123a-glm51-verifierhigh4096-trainonly-smoke40",
+  "objective": "Restore the original E99 GLM 5.1 teacher and test a bounded high-effort verifier interface for strict Auto SG-CoT traces.",
+  "source_dataset": "data/stage2_confirmation_e121/richere_v2confirm_split1_strict_seenonly_oracle_mixed_noise_top10_shuffle_sgcot_target_train_pos.jsonl",
+  "test_access": false,
+  "sample_selection": {
+    "mode": "e40_priority_sample_v1",
+    "limit": 40,
+    "seed": 1111
+  },
+  "generator_model": "glm-5.1",
+  "generator_max_tokens": 8192,
+  "generator_reasoning_effort": null,
+  "verifier_model": "deepseek-v4-pro",
+  "verifier_reasoning_effort": "high",
+  "verifier_max_tokens": 4096,
+  "max_attempts_per_row": 3,
+  "workers": 8,
+  "prompt_profile": "e95_trigger_locked_autocluster",
+  "repair_profile": "strict_full",
+  "output_protocol": "xml_tags",
+  "gate": {
+    "expected_unique_rows": 40,
+    "minimum_accepted": 38,
+    "maximum_verifier_parse_errors": 0,
+    "maximum_empty_verifier_content": 0,
+    "maximum_verifier_length_finish": 0,
+    "minimum_verifier_token_headroom": 256
+  },
+  "output_dir": "outputs/stage2_confirmation_e123/e123a_glm51_verifierhigh4096_smoke40"
+}

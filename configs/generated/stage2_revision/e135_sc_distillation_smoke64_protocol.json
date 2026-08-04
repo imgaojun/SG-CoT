@@ -1,0 +1,51 @@
+{
+  "id": "e135_sc_distillation_trainonly_smoke64_v1",
+  "source_experiment": "e81",
+  "source_train_jsonl": "data/stage2_adaptive_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_e81_trigger_locked_arbitration_glm51_full1500_thinking_evidence_cot_train_pos.jsonl",
+  "source_train_sha256": "e09fdaf8a846438c8e3bc640c47170b5eab8577919e2fdf4c0d25c7b46a503a5",
+  "source_train_rows": 1448,
+  "source_model": "outputs/stage2_adaptive_runs_user/richere_split1_qwen3_4b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_e81_trigger_locked_arbitration_glm51_full1500_thinking_evidence_cot_full",
+  "source_model_index_sha256": "7a487b18f5c2c64efada003845be17ce6ac7e324cac65ebc507c23c4f0860344",
+  "source_trainer_state_sha256": "04e6efb57eb5f63dd56845f2969778b8a2e2748b97bdc298e5878607e19e7c79",
+  "source_global_step": 273,
+  "selection": {
+    "method": "ascending_sha256_of_seed_source_index_wnd_id",
+    "seed": 1350,
+    "rows": 64,
+    "source_part": "train"
+  },
+  "generation": {
+    "seed": 1351,
+    "n_samples": 8,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "max_new_tokens": 1024,
+    "batch_rows": 1
+  },
+  "vote": {
+    "event_and_argument_threshold": 3,
+    "offset_recovery": "official_recover_offsets_from_evidence"
+  },
+  "target_rule": "select_the_lowest_index_strictly_tagged_sample_whose_recovered_structure_exactly_equals_the_k3_vote_and_only_when_that_vote_exactly_equals_train_gold",
+  "gate": {
+    "required_generation_rows": 64,
+    "required_samples_per_row": 8,
+    "minimum_strictly_parsed_samples_per_row": 6,
+    "minimum_vote_carrier_rows": 36,
+    "minimum_vote_gold_exact_rows": 12,
+    "minimum_eligible_distillation_rows": 12,
+    "minimum_vote_corrects_greedy_rows": 3,
+    "maximum_selected_target_parse_errors": 0,
+    "maximum_duplicate_wnd_ids": 0
+  },
+  "prior_dev_seen_diagnostic": {
+    "rows": 197,
+    "vote_carrier_rows": 128,
+    "vote_gold_exact_rows": 42,
+    "eligible_rows": 40,
+    "vote_corrects_greedy_rows": 14,
+    "source": "frozen_e101_dev_seen_samples_already_used_by_e131"
+  },
+  "test_access": false,
+  "optimization_boundary": "sft_only_no_preference_optimization"
+}

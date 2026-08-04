@@ -1,0 +1,14 @@
+{
+  "protocol": "E119 single-category masked-SimPO transfer diagnostic",
+  "source_jsonl": "/workspace/project/data/stage2_adaptive_datasets/richere_balanced_split1_e115a_e81_atomic_counterfactual_orpo_smoke40_docdiverse_seed1150.jsonl",
+  "source_sha256": "de1f034e027706e52885d915cf5440fe228469e157313fcb5640a27ddcc7785b",
+  "output_dir": "/workspace/project/outputs/stage2_preference_mining/e119a_e81_single_category_transfer_diagnostic",
+  "target_categories": [
+    "extra_frame",
+    "wrong_type",
+    "argument_omission"
+  ],
+  "pairs_per_category": 8,
+  "optimizer_steps_per_run": 1,
+  "test_data_access": false
+}

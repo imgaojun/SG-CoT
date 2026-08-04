@@ -1,0 +1,16 @@
+{
+  "id": "e124c_deepseek_audit100",
+  "protocol": "e124c-independent-deepseek-audit100-v1",
+  "source": "E124B accepted normalized strict train traces",
+  "selection": "ascending sha256(1242\\0wnd_id), then wnd_id",
+  "sample_size": 100,
+  "seed": 1242,
+  "auditor_model": "deepseek-v4-pro",
+  "reasoning_effort": "high",
+  "max_tokens": 4096,
+  "max_attempts_per_trace": 3,
+  "workers": 8,
+  "minimum_final_semantic_pass": 95,
+  "test_access": false,
+  "required_before_sgcot_training": true
+}

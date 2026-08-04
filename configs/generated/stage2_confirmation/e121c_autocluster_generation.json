@@ -1,0 +1,22 @@
+{
+  "id": "e121c_autocluster_generation",
+  "run_name": "e121_autocluster_confirmation",
+  "input_jsonl": "data/stage2_confirmation_e121/richere_v2confirm_split1_strict_seenonly_oracle_mixed_noise_top10_shuffle_sgcot_target_train_pos.jsonl",
+  "output_dir": "outputs/stage2_confirmation_e121/generation/e121c_autocluster",
+  "limit": 1500,
+  "minimum_normalized_rows": 1400,
+  "seed": 1111,
+  "sampled_rows_mode": "priority_sample_v1",
+  "prompt_profile": "e95_trigger_locked_autocluster",
+  "repair_profile": "strict_full",
+  "output_protocol": "xml_tags",
+  "generator_model": "deepseek-v4-pro",
+  "verifier_model": "deepseek-v4-pro",
+  "verifier_reasoning_effort": "max",
+  "max_attempts": 3,
+  "auto_cluster_map": "data/schema/richere-en.auto_cluster_map.json",
+  "cluster_weights": {"cue": 0.5, "role": 0.3, "family": 0.2},
+  "cluster_top_k": 3,
+  "sft_cutoff_len": 2048,
+  "candidate_scope": "seen_only"
+}

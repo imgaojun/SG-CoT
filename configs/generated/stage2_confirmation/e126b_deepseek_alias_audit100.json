@@ -1,0 +1,31 @@
+{
+  "id": "e126b_deepseek_alias_audit100",
+  "protocol": "e126b-independent-deepseek-alias-audit100-v1",
+  "test_access": false,
+  "input_jsonl": "data/stage2_confirmation_e126/richere_v2confirm_split1_strict_seenonly_oracle_mixed_noise_top10_shuffle_sgcot_autocluster_e126a_train_pos.jsonl",
+  "selection": {
+    "unit": "wnd_id",
+    "method": "stable_sha256_rank",
+    "sample_size": 100,
+    "seed": 1260
+  },
+  "verifier_model": "deepseek-v4-pro",
+  "verifier_profile": "target_role_alias_v1",
+  "verifier_reasoning_effort": "high",
+  "verifier_max_tokens": 8192,
+  "workers": 16,
+  "max_attempts": 3,
+  "retry_policy": "call_or_parse_failures_only",
+  "row_selection_uses_verifier": false,
+  "gate": {
+    "exact_sample_size": 100,
+    "all_hard_valid": true,
+    "all_receive_valid_judgment": true,
+    "minimum_semantic_pass": 85
+  },
+  "decision": {
+    "pass": "freeze E126 inputs and prepare matching SG-CoT training configs",
+    "fail": "stop this trace direction without changing the judge, threshold, sample, or traces"
+  },
+  "output_dir": "outputs/stage2_confirmation_e126/e126b_deepseek_alias_audit100"
+}

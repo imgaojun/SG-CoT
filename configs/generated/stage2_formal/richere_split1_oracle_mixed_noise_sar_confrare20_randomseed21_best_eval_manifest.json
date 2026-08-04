@@ -1,0 +1,68 @@
+{
+  "base_model": "/workspace/models/LLM-Research/Qwen3-1.7B",
+  "runs": [
+    {
+      "tag": "richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_confrare20_typerolelite_full",
+      "selection_summary": "outputs/stage2_full_sft_runs_stepmatch_devpick_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_confrare20_typerolelite_full/selection_summary.json",
+      "evals": [
+        {
+          "name": "test",
+          "eval_jsonl": "data/stage2_cot_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_sar_confrare20_typerolelite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_full_sft_runs_stepmatch_best_eval_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_confrare20_typerolelite_full_test_argfirst"
+        },
+        {
+          "name": "test_seen",
+          "eval_jsonl": "data/stage2_cot_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_sar_confrare20_typerolelite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_full_sft_runs_stepmatch_best_eval_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_confrare20_typerolelite_full_test_seen_argfirst"
+        },
+        {
+          "name": "test_unseen",
+          "eval_jsonl": "data/stage2_cot_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_sar_confrare20_typerolelite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_full_sft_runs_stepmatch_best_eval_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_confrare20_typerolelite_full_test_unseen_argfirst"
+        }
+      ]
+    },
+    {
+      "tag": "richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_confrare20_directdup_full",
+      "selection_summary": "outputs/stage2_full_sft_runs_stepmatch_devpick_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_confrare20_directdup_full/selection_summary.json",
+      "evals": [
+        {
+          "name": "test",
+          "eval_jsonl": "data/stage2_cot_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_sar_confrare20_directdup_test_pos.jsonl",
+          "output_dir": "outputs/stage2_full_sft_runs_stepmatch_best_eval_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_confrare20_directdup_full_test_argfirst"
+        },
+        {
+          "name": "test_seen",
+          "eval_jsonl": "data/stage2_cot_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_sar_confrare20_directdup_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_full_sft_runs_stepmatch_best_eval_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_confrare20_directdup_full_test_seen_argfirst"
+        },
+        {
+          "name": "test_unseen",
+          "eval_jsonl": "data/stage2_cot_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_sar_confrare20_directdup_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_full_sft_runs_stepmatch_best_eval_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_confrare20_directdup_full_test_unseen_argfirst"
+        }
+      ]
+    },
+    {
+      "tag": "richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_random20_seed21_typerolelite_full",
+      "selection_summary": "outputs/stage2_full_sft_runs_stepmatch_devpick_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_random20_seed21_typerolelite_full/selection_summary.json",
+      "evals": [
+        {
+          "name": "test",
+          "eval_jsonl": "data/stage2_cot_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_sar_random20_seed21_typerolelite_test_pos.jsonl",
+          "output_dir": "outputs/stage2_full_sft_runs_stepmatch_best_eval_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_random20_seed21_typerolelite_full_test_argfirst"
+        },
+        {
+          "name": "test_seen",
+          "eval_jsonl": "data/stage2_cot_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_sar_random20_seed21_typerolelite_test_seen_pos.jsonl",
+          "output_dir": "outputs/stage2_full_sft_runs_stepmatch_best_eval_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_random20_seed21_typerolelite_full_test_seen_argfirst"
+        },
+        {
+          "name": "test_unseen",
+          "eval_jsonl": "data/stage2_cot_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_sar_random20_seed21_typerolelite_test_unseen_pos.jsonl",
+          "output_dir": "outputs/stage2_full_sft_runs_stepmatch_best_eval_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_sar_random20_seed21_typerolelite_full_test_unseen_argfirst"
+        }
+      ]
+    }
+  ]
+}

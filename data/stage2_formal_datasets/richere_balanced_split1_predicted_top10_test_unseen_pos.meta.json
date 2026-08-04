@@ -1,0 +1,20 @@
+{
+  "dataset_name": "richere_balanced_split1_predicted_top10_test_unseen_pos",
+  "file_name": "richere_balanced_split1_predicted_top10_test_unseen_pos.jsonl",
+  "num_examples": 82,
+  "data_root": "data/processed/type_holdout",
+  "dataset": "richere-en",
+  "protocol": "balanced-subtype-v1",
+  "split": "split1",
+  "part": "test_unseen",
+  "schema_path": "data/schema/richere-en.event_schema.json",
+  "candidate_source": "predicted",
+  "top_k": 10,
+  "prediction_tag": "qwen8b_main",
+  "prediction_model": "Qwen/Qwen3-Reranker-8B",
+  "prediction_part": "test",
+  "selection_mode": "positive_only",
+  "negative_ratio": null,
+  "seed": 13,
+  "max_examples": null
+}

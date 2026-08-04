@@ -1,0 +1,201 @@
+{
+  "schema_path": "data/schema/richere-en.event_schema.json",
+  "top_k": 3,
+  "weights": {
+    "cue": 0.5,
+    "role": 0.3,
+    "family": 0.2
+  },
+  "clusters": {
+    "Business:Declare-Bankruptcy": [
+      "Business:Merge-Org",
+      "Business:End-Org",
+      "Business:Start-Org"
+    ],
+    "Business:End-Org": [
+      "Business:Start-Org",
+      "Business:Declare-Bankruptcy",
+      "Business:Merge-Org"
+    ],
+    "Business:Merge-Org": [
+      "Business:Declare-Bankruptcy",
+      "Business:End-Org",
+      "Business:Start-Org"
+    ],
+    "Business:Start-Org": [
+      "Business:End-Org",
+      "Business:Declare-Bankruptcy",
+      "Business:Merge-Org"
+    ],
+    "Conflict:Attack": [
+      "Conflict:Demonstrate",
+      "Life:Die",
+      "Life:Injure"
+    ],
+    "Conflict:Demonstrate": [
+      "Contact:Meet",
+      "Conflict:Attack",
+      "Justice:Fine"
+    ],
+    "Contact:Broadcast": [
+      "Contact:Contact",
+      "Contact:Correspondence",
+      "Contact:Meet"
+    ],
+    "Contact:Contact": [
+      "Contact:Correspondence",
+      "Contact:Meet",
+      "Contact:Broadcast"
+    ],
+    "Contact:Correspondence": [
+      "Contact:Contact",
+      "Contact:Meet",
+      "Contact:Broadcast"
+    ],
+    "Contact:Meet": [
+      "Conflict:Demonstrate",
+      "Contact:Contact",
+      "Contact:Correspondence"
+    ],
+    "Justice:Acquit": [
+      "Justice:Convict",
+      "Justice:Pardon",
+      "Justice:Sentence"
+    ],
+    "Justice:Appeal": [
+      "Justice:Sue",
+      "Justice:Acquit",
+      "Justice:Convict"
+    ],
+    "Justice:Arrest-Jail": [
+      "Justice:Execute",
+      "Justice:Release-Parole",
+      "Justice:Extradite"
+    ],
+    "Justice:Charge-Indict": [
+      "Justice:Trial-Hearing",
+      "Justice:Acquit",
+      "Justice:Convict"
+    ],
+    "Justice:Convict": [
+      "Justice:Acquit",
+      "Justice:Pardon",
+      "Justice:Sentence"
+    ],
+    "Justice:Execute": [
+      "Justice:Arrest-Jail",
+      "Justice:Release-Parole",
+      "Justice:Extradite"
+    ],
+    "Justice:Extradite": [
+      "Justice:Arrest-Jail",
+      "Justice:Execute",
+      "Justice:Release-Parole"
+    ],
+    "Justice:Fine": [
+      "Justice:Acquit",
+      "Justice:Convict",
+      "Justice:Pardon"
+    ],
+    "Justice:Pardon": [
+      "Justice:Acquit",
+      "Justice:Convict",
+      "Justice:Sentence"
+    ],
+    "Justice:Release-Parole": [
+      "Justice:Arrest-Jail",
+      "Justice:Execute",
+      "Justice:Extradite"
+    ],
+    "Justice:Sentence": [
+      "Justice:Acquit",
+      "Justice:Convict",
+      "Justice:Pardon"
+    ],
+    "Justice:Sue": [
+      "Justice:Appeal",
+      "Justice:Acquit",
+      "Justice:Convict"
+    ],
+    "Justice:Trial-Hearing": [
+      "Justice:Charge-Indict",
+      "Justice:Acquit",
+      "Justice:Convict"
+    ],
+    "Life:Be-Born": [
+      "Life:Divorce",
+      "Life:Marry",
+      "Life:Die"
+    ],
+    "Life:Die": [
+      "Life:Injure",
+      "Life:Be-Born",
+      "Life:Divorce"
+    ],
+    "Life:Divorce": [
+      "Life:Be-Born",
+      "Life:Marry",
+      "Life:Die"
+    ],
+    "Life:Injure": [
+      "Life:Die",
+      "Life:Be-Born",
+      "Life:Divorce"
+    ],
+    "Life:Marry": [
+      "Life:Be-Born",
+      "Life:Divorce",
+      "Life:Die"
+    ],
+    "Manufacture:Artifact": [
+      "Justice:Arrest-Jail",
+      "Justice:Execute",
+      "Justice:Release-Parole"
+    ],
+    "Movement:Transport-Artifact": [
+      "Movement:Transport-Person",
+      "Justice:Extradite",
+      "Manufacture:Artifact"
+    ],
+    "Movement:Transport-Person": [
+      "Movement:Transport-Artifact",
+      "Justice:Extradite",
+      "Justice:Arrest-Jail"
+    ],
+    "Personnel:Elect": [
+      "Personnel:Start-Position",
+      "Personnel:End-Position",
+      "Personnel:Nominate"
+    ],
+    "Personnel:End-Position": [
+      "Personnel:Elect",
+      "Personnel:Start-Position",
+      "Personnel:Nominate"
+    ],
+    "Personnel:Nominate": [
+      "Personnel:Elect",
+      "Personnel:End-Position",
+      "Personnel:Start-Position"
+    ],
+    "Personnel:Start-Position": [
+      "Personnel:Elect",
+      "Personnel:End-Position",
+      "Personnel:Nominate"
+    ],
+    "Transaction:Transaction": [
+      "Transaction:Transfer-Ownership",
+      "Transaction:Transfer-Money",
+      "Business:End-Org"
+    ],
+    "Transaction:Transfer-Money": [
+      "Transaction:Transaction",
+      "Transaction:Transfer-Ownership",
+      "Business:End-Org"
+    ],
+    "Transaction:Transfer-Ownership": [
+      "Transaction:Transaction",
+      "Transaction:Transfer-Money",
+      "Business:End-Org"
+    ]
+  }
+}

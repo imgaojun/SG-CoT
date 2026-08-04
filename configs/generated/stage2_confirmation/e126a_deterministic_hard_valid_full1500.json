@@ -1,0 +1,27 @@
+{
+  "id": "e126a_deterministic_hard_valid_full1500",
+  "protocol": "e126-deterministic-hard-valid-existing-traces-v1",
+  "test_access": false,
+  "frozen_raw_jsonl": "outputs/stage2_confirmation_e124/e124b_glm51_selfverifier4096_full1500/e40_raw.jsonl",
+  "frozen_raw_sha256": "073dcd5685dc3b04b4dd045e9b3cfbb495fa7d96fb745090b04323eae2bec66c",
+  "frozen_sampled_rows_jsonl": "outputs/stage2_confirmation_e124/e124b_glm51_selfverifier4096_full1500/sampled_rows.jsonl",
+  "frozen_sampled_rows_sha256": "c55d53d8179faf2619cfd93dcfea598f378464b4573466bfb85b0ec27cfb90d4",
+  "source_rows": 1500,
+  "trace_selection": "last_existing_hard_valid_attempt",
+  "generator_calls": 0,
+  "llm_verifier_calls": 0,
+  "final_protocol": "shortest_unique_evidence_v1",
+  "gate": {
+    "exact_source_rows": 1500,
+    "minimum_existing_hard_valid": 1499,
+    "all_selected_reverify_hard_valid": true,
+    "unique_sample_ids": true,
+    "unique_wnd_ids": true,
+    "minimum_cutoff_valid": 1400,
+    "cutoff_len": 2048,
+    "zero_heldout_leaks": true,
+    "exact_surface_recovery": true
+  },
+  "output_dir": "outputs/stage2_confirmation_e126/e126a_deterministic_hard_valid_full1500",
+  "normalized_dataset": "data/stage2_confirmation_e126/richere_v2confirm_split1_strict_seenonly_oracle_mixed_noise_top10_shuffle_sgcot_autocluster_e126a_train_pos.jsonl"
+}

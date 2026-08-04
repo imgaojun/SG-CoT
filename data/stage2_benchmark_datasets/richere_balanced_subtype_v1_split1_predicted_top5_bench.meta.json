@@ -1,0 +1,12 @@
+{
+  "slice_key": "richere_balanced_split1_predicted_top5",
+  "dataset_name": "richere_balanced_subtype_v1_split1_predicted_top5_bench",
+  "dataset_file": "richere_balanced_subtype_v1_split1_predicted_top5_bench.jsonl",
+  "num_examples": 100,
+  "top_k": 5,
+  "source_dataset": "richere-en",
+  "source_protocol": "balanced-subtype-v1",
+  "source_split": "split1",
+  "source_part": "dev_seen",
+  "prediction_model": "Qwen/Qwen3-Reranker-8B"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "e125b_role_alias_reverify_full1500",
+  "protocol": "e125-target-role-alias-reverification-v1",
+  "test_access": false,
+  "frozen_raw_jsonl": "outputs/stage2_confirmation_e124/e124b_glm51_selfverifier4096_full1500/e40_raw.jsonl",
+  "frozen_raw_sha256": "073dcd5685dc3b04b4dd045e9b3cfbb495fa7d96fb745090b04323eae2bec66c",
+  "sample_size": 1500,
+  "trace_selection": "last_existing_hard_valid_attempt",
+  "generator_calls": 0,
+  "verifier_model": "glm-5.1",
+  "verifier_profile": "target_role_alias_v1",
+  "verifier_max_tokens": 6144,
+  "verifier_reasoning_effort": null,
+  "workers": 16,
+  "max_attempts": 3,
+  "retry_policy": "call_or_parse_failures_only",
+  "gate": {
+    "minimum_hard_valid": 1499,
+    "minimum_valid_judgments": 1490,
+    "minimum_semantic_pass": 1400,
+    "maximum_rate_per_failure_kind": 0.01,
+    "minimum_p99_headroom_tokens": 512,
+    "minimum_cutoff_valid": 1400,
+    "cutoff_len": 2048,
+    "zero_heldout_leaks": true,
+    "exact_surface_recovery": true
+  },
+  "independent_audit_required_before_training": "e125c_deepseek_alias_audit100",
+  "output_dir": "outputs/stage2_confirmation_e125/e125b_role_alias_reverify_full1500"
+}

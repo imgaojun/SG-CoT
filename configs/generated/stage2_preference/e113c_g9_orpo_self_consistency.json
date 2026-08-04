@@ -1,0 +1,12 @@
+{
+  "id": "e113c_g9_orpo_self_consistency",
+  "tags": ["base", "s8322", "s8333"],
+  "splits": ["test_seen", "test_unseen"],
+  "n_samples": 8,
+  "vote_k": 3,
+  "temperature": 0.8,
+  "top_p": 0.95,
+  "max_new_tokens": 1024,
+  "raw_output_dir": "outputs/stage2_analysis/e113_g9_orpo_sc",
+  "rescored_output_dir": "outputs/stage2_preference_eval/e113_g9_orpo_sc_k3"
+}

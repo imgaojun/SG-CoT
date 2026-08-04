@@ -1,0 +1,31 @@
+{
+  "id": "e125a_role_alias_reverify_smoke40",
+  "protocol": "e125-target-role-alias-reverification-v1",
+  "test_access": false,
+  "frozen_raw_jsonl": "outputs/stage2_confirmation_e124/e124b_glm51_selfverifier4096_full1500/e40_raw.jsonl",
+  "frozen_raw_sha256": "073dcd5685dc3b04b4dd045e9b3cfbb495fa7d96fb745090b04323eae2bec66c",
+  "selection": {
+    "sample_size": 40,
+    "seed": 1250,
+    "sample_ids_sha256": "6bf78db5905389c1abb0063cfdfc4e4232abb8da3564c26ef270072afb00d3dc",
+    "originally_accepted": 36,
+    "originally_rejected": 4
+  },
+  "trace_selection": "last_existing_hard_valid_attempt",
+  "generator_calls": 0,
+  "verifier_model": "glm-5.1",
+  "verifier_profile": "target_role_alias_v1",
+  "verifier_max_tokens": 6144,
+  "verifier_reasoning_effort": null,
+  "workers": 16,
+  "max_attempts": 3,
+  "retry_policy": "call_or_parse_failures_only",
+  "gate": {
+    "hard_valid": 40,
+    "valid_judgments": 40,
+    "minimum_semantic_pass": 37,
+    "maximum_rate_per_failure_kind": 0.0,
+    "minimum_p99_headroom_tokens": 512
+  },
+  "output_dir": "outputs/stage2_confirmation_e125/e125a_role_alias_reverify_smoke40"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "e136_rejected_row_bounded_retry_v1",
+  "parent_experiment": "e134_retrieved_abstention_glm_verifier_v1",
+  "source_rows": "data/stage2_revision_e130/e130_retrieved_train_full1500.jsonl",
+  "source_rows_sha256": "9aa3f5312317444fb3efa14253f713541df70c02de156cf2b5a446183bdb69fa",
+  "source_row_count": 1500,
+  "parent_raw": "outputs/stage2_revision_e134/generation/full1500/e40_raw.jsonl",
+  "parent_raw_sha256": "a3731922d44ad585e6b0d86bf3f3257eb29e3a9ac42c430b0bc5efc9f115b68c",
+  "parent_gate": "outputs/stage2_revision_e134/generation/full1500/gate.json",
+  "parent_gate_sha256": "6e3ce5eee21c5622d53c0d74b93572630530753f8dc7e4532bb2883e356da1be",
+  "parent_train": "data/stage2_revision_e134/generated_full/richere_e134_retrieved_abstention_e134_retrieved_abstention_glmverifier_full1500_thinking_evidence_cot_train_pos.jsonl",
+  "parent_train_sha256": "8ea43541dbf691cbb359093e25298848c082e2142e7ac4b471adba261bc0ea8d",
+  "parent_accepted_rows": 1384,
+  "parent_accepted_mode_counts": {
+    "gold_present": 1212,
+    "partial_supported": 103,
+    "abstain": 69
+  },
+  "retry_rows": 116,
+  "retry_mode_counts": {
+    "gold_present": 101,
+    "partial_supported": 14,
+    "abstain": 1
+  },
+  "parent_final_verifier_parse_indices": [592, 1196, 1472],
+  "retry_manifest": "data/stage2_revision_e136/retry116/retry_rows.jsonl",
+  "retry_manifest_sha256": "c4fdbd003b79c6f19e96cb62e263ebc886b7b6efb8b224f71b75dcbfb56a8289",
+  "generation": {
+    "teacher_model": "glm-5.1",
+    "teacher_max_tokens": 8192,
+    "verifier_model": "glm-5.1",
+    "verifier_reasoning_effort": null,
+    "verifier_max_tokens": 4096,
+    "max_attempts": 3,
+    "workers": 24,
+    "prompt_profile": "e130_retrieved_abstention",
+    "output_protocol": "xml_tags"
+  },
+  "combination_rule": "lock_every_parent_accepted_record; for_each_parent_reject_use_an_accepted_retry_if_available; otherwise_use_a_parse_clean_retry_only_to_replace_a_parent_final_parse_error; otherwise_retain_the_parent_reject",
+  "gate": {
+    "minimum_accepted_total": 1400,
+    "minimum_gold_present_accepted": 1220,
+    "minimum_partial_supported_accepted": 105,
+    "minimum_abstain_accepted": 63,
+    "maximum_selected_final_verifier_parse_errors": 0,
+    "maximum_accepted_candidate_inconsistent": 0,
+    "maximum_duplicate_source_indices": 0,
+    "required_locked_parent_rows": 1384,
+    "required_retry_coverage": 116
+  },
+  "test_access": false,
+  "authorization_after_pass": "build_one_mixed_oracle_retrieved_sft_config_under_a_new_experiment_id"
+}

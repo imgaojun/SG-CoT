@@ -1,0 +1,20 @@
+{
+  "id": "e111a_strict_seenonly_surface_data",
+  "dataset": "richere-en",
+  "protocol": "balanced-subtype-v1",
+  "split": "split1",
+  "candidate_scope": {
+    "train": "seen_only",
+    "dev_and_test": "all"
+  },
+  "candidate_source": "oracle_mixed_noise",
+  "candidate_order_mode": "shuffle",
+  "top_k": 10,
+  "seed": 13,
+  "selection_mode": "positive_only",
+  "schema_path": "data/schema/richere-en.event_schema.json",
+  "heldout_types_path": "data/processed/type_holdout/richere-en/balanced-subtype-v1/split1/unseen_types.json",
+  "surface_protocol": "shortest_unique_evidence_v1",
+  "parts": ["train", "dev_seen", "test_seen", "test_unseen"],
+  "output_dir": "data/stage2_strict_datasets"
+}

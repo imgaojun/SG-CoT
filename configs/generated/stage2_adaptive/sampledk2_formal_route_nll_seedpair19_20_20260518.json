@@ -1,0 +1,48 @@
+{
+  "id": "sampled_k2_formal_route_nll_seedpair19_20_20260518",
+  "kind": "formal_probe_config",
+  "created_at": "2026-05-18T23:20:01+08:00",
+  "updated_at": "2026-05-18T23:20:01+08:00",
+  "trained_branch": "sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+  "adapter_paths": {
+    "checkpoint-50": "outputs/stage2_adaptive_runs_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_full/checkpoint-50",
+    "checkpoint-75": "outputs/stage2_adaptive_runs_user/richere_split1_qwen3_1_7b_instruct_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25_full/checkpoint-75"
+  },
+  "reason_checkpoint": "checkpoint-258",
+  "sample_root": "/mnt/disk/gaojun/research/progressive-ee/outputs/stage2_modular_dualexpert/formal_k2_counterfactual_utility_20260518/sampled_reason_expert_forcedreason_from_noaux_20260517_checkpoint-258",
+  "sampled_evidence_samples_per_route": 2,
+  "sampled_evidence_seeds": [
+    19,
+    20
+  ],
+  "splits": {
+    "test_seen": {
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_formal_route_nll_seedpair19_20_20260518_test_seen_pos",
+      "source_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_test_seen_pos.jsonl",
+      "count": 361
+    },
+    "test_unseen": {
+      "dataset_name": "richere_balanced_split1_oracle_mixed_noise_top10_shuffle_adaptive_sampled_k2_formal_route_nll_seedpair19_20_20260518_test_unseen_pos",
+      "source_jsonl": "/mnt/disk/gaojun/research/progressive-ee/data/stage2_formal_datasets/richere_balanced_split1_oracle_mixed_noise_top10_shuffle_test_unseen_pos.jsonl",
+      "count": 82
+    }
+  },
+  "aggregate_test_from": [
+    "test_seen",
+    "test_unseen"
+  ],
+  "pre_registered_policies": [
+    {
+      "checkpoint": "checkpoint-50",
+      "policy": "margin_ge_0p25",
+      "threshold": 0.25
+    },
+    {
+      "checkpoint": "checkpoint-75",
+      "policy": "margin_ge_0p05",
+      "threshold": 0.05
+    }
+  ],
+  "output_root": "/mnt/disk/gaojun/research/progressive-ee/outputs/stage2_adaptive_route_formal_nll_seedpair19_20_20260518/sampled_k2_ckpt258_evidcompact_balhard_routecls_noauxwarm_lr2e6_save25",
+  "report": "/mnt/disk/gaojun/research/progressive-ee/reports/2026-05-18_stage2_sampled_k2_formal_seedpair19_20_robustness.md"
+}

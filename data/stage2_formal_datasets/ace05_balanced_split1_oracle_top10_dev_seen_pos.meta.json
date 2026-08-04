@@ -1,0 +1,20 @@
+{
+  "dataset_name": "ace05_balanced_split1_oracle_top10_dev_seen_pos",
+  "file_name": "ace05_balanced_split1_oracle_top10_dev_seen_pos.jsonl",
+  "num_examples": 308,
+  "data_root": "data/processed/type_holdout",
+  "dataset": "ace05-en",
+  "protocol": "balanced-subtype-v1",
+  "split": "split1",
+  "part": "dev_seen",
+  "schema_path": "data/schema/ace05-en.event_schema.json",
+  "candidate_source": "oracle",
+  "top_k": 10,
+  "prediction_tag": null,
+  "prediction_model": null,
+  "prediction_part": null,
+  "selection_mode": "positive_only",
+  "negative_ratio": null,
+  "seed": 13,
+  "max_examples": null
+}
